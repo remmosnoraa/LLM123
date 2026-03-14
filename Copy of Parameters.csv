@@ -1,0 +1,765 @@
+﻿parameter_name,parameter_values,group,subgroup,short_desc
+actual_item,#EPS,Constants,Actual Item (actual_item),Earnings Per Share
+actual_item,#SALES,Constants,Actual Item (actual_item),Sales
+actual_item,#CAPX,Constants,Actual Item (actual_item),Capital Expenditure 
+actual_item,#EBITDA,Constants,Actual Item (actual_item),EBITDA
+actual_item,#FCF,Constants,Actual Item (actual_item),Free Cash Flow
+actual_item,#FFO,Constants,Actual Item (actual_item),Funds From Operations
+actual_item,#PTI,Constants,Actual Item (actual_item),Pre-Tax Profit
+actual_item,#SOE,Constants,Actual Item (actual_item),Stock Option Expense
+actual_item,#NET,Constants,Actual Item (actual_item),Net Profit
+actual_item,#EPS_GAAP,Constants,Actual Item (actual_item),Reported Earnings Per Share
+actual_item,#EBIT,Constants,Actual Item (actual_item),EBIT
+actual_item,#SHS_REPURCH,Constants,Actual Item (actual_item),Share Repurchase
+method,#Avg,Constants,Aggregate Method Parameter,"Average the values (default, recommended)"
+method,#CapAvg,Constants,Aggregate Method Parameter,Cap weighted average the values
+outlier_handl,#Winsor,Constants,Aggregate Outlier Handler Parameter,The outliers are set to the highest/lowest value that are not outliers
+outlier_handl,#Exclude,Constants,Aggregate Outlier Handler Parameter,Excludes outliers from the aggregation (default)
+cons_item,#EPSNTM,Constants,Consensus Estimate (cons_item),EPS Next Twelve Months
+cons_item,#EPSQ,Constants,Consensus Estimate (cons_item),EPS Quarter
+cons_item,#EPSY,Constants,Consensus Estimate (cons_item),EPS Annual
+cons_item,#FCFNTM,Constants,Consensus Estimate (cons_item),FCF Next Twelve Months
+cons_item,#FCFQ,Constants,Consensus Estimate (cons_item),FCF Quarter
+cons_item,#FCFY,Constants,Consensus Estimate (cons_item),FCF Annual
+cons_item,#PT,Constants,Consensus Estimate (cons_item),Price Target
+cons_item,#SALENTM,Constants,Consensus Estimate (cons_item),Sales Next Twelve Months
+cons_item,#SALEQ,Constants,Consensus Estimate (cons_item),Sales Quarter
+cons_item,#SALEY,Constants,Consensus Estimate (cons_item),Sales Annual
+cons_item,#EBITDANTM,Constants,Consensus Estimate (cons_item),EBITDA Next Twelve Months
+cons_item,#EBITDAQ,Constants,Consensus Estimate (cons_item),EBITDA Quarter
+cons_item,#EBITDAY,Constants,Consensus Estimate (cons_item),EBITDA Annual
+cons_item,#CAPXNTM,Constants,Consensus Estimate (cons_item),CapEx Next Twelve Months
+cons_item,#CAPXQ,Constants,Consensus Estimate (cons_item),CapEx Quarter
+cons_item,#CAPXY,Constants,Consensus Estimate (cons_item),CapEx Annual
+cons_item,#LTG,Constants,Consensus Estimate (cons_item),Long Term Growth
+rec_stat,#BuyCnt,Constants,Consensus Recommendation (rec_stat),Number of Buy Recommendations
+rec_stat,#AvgRec,Constants,Consensus Recommendation (rec_stat),Average of all Recommendation
+rec_stat,#UnderCnt,Constants,Consensus Recommendation (rec_stat),Number of Underweight Recommendations
+rec_stat,#OverCnt,Constants,Consensus Recommendation (rec_stat),Number of Overweight Recommendations
+rec_stat,#RecCnt,Constants,Consensus Recommendation (rec_stat),Number of Recommendations
+rec_stat,#HoldCnt,Constants,Consensus Recommendation (rec_stat),Number of Hold Recommendations
+rec_stat,#SellCnt,Constants,Consensus Recommendation (rec_stat),Number of Sell Recommendations
+ca_retvalue,#ACTIONCNT,Constants,Corporate Actions (ca_retvalue),Number of actions that matched or 0
+ca_retvalue,#ACTIONTYPE,Constants,Corporate Actions (ca_retvalue),The corporate action type
+ca_retvalue,#TRUEFALSE,Constants,Corporate Actions (ca_retvalue),"TRUE if a match is found, FALSE otherwise"
+ca_retvalue,#ANNCEDAYS,Constants,Corporate Actions (ca_retvalue),Number of days since the announce date or NA
+ca_retvalue,#CLOSEDAYS,Constants,Corporate Actions (ca_retvalue),Number of days since the close/expiry date or NA
+ca_status,#COMPLETION,Constants,Corporate Actions (ca_status),Completion
+ca_status,#MEETING,Constants,Corporate Actions (ca_status),Meeting
+ca_status,#APPROVAL,Constants,Corporate Actions (ca_status),Approval
+ca_status,#TERMINATION,Constants,Corporate Actions (ca_status),Termination
+ca_status,#OTHER,Constants,Corporate Actions (ca_status),Other ICE Data status
+ca_status,#STATUSANY,Constants,Corporate Actions (ca_status),Any status
+ca_status,#STATUSFAIL,Constants,Corporate Actions (ca_status),Either #TERMINATION or #REJECTION
+ca_status,#STATUSNA,Constants,Corporate Actions (ca_status),Status not specified
+ca_status,#STATUSOK,Constants,Corporate Actions (ca_status),Either #COMPLETION or #APPROVAL
+ca_status,#REJECTION,Constants,Corporate Actions (ca_status),Rejection
+ca_type,#SPINOFF,Constants,Corporate Actions (ca_type),Spinoff
+ca_type,#SPLIT,Constants,Corporate Actions (ca_type),Split
+ca_type,#MANDA,Constants,Corporate Actions (ca_type),Any of the individual actions except #SPLIT
+ca_type,#MANDAEXSPIN,Constants,Corporate Actions (ca_type),Any of the individual actions except #SPLIT  & #SPINOFF
+ca_type,#BUYOFF,Constants,Corporate Actions (ca_type),Buy Offer
+ca_type,#MERGER,Constants,Corporate Actions (ca_type),Merger
+ca_type,#MERGEREL,Constants,Corporate Actions (ca_type),Merger Elect
+ca_type,#NEWOFFER,Constants,Corporate Actions (ca_type),New Offer
+ca_type,#LIQUIDATION,Constants,Corporate Actions (ca_type),Liquidation
+div_dt,#AnnDate,Constants,Dividend Date,Announce date
+div_dt,#PayDate,Constants,Dividend Date,Pay date
+div_dt,#ExDate,Constants,Dividend Date,Ex date
+div_type,#Regular,Constants,Dividend Type,Regular dividend (used to calculate Yield)
+div_type,#Special,Constants,Dividend Type,Special dividend (not used to calculate Yield)
+div_type,#AllDiv,Constants,Dividend Type,Any kind of dividend
+type,QTR,Constants,Filing Period,Interim
+type,TTM,Constants,Filing Period,Trailing Twelve Months
+type,ANN,Constants,Filing Period,Annual
+incl_na,#InclNA,Constants,Formula Functions Include NA Parameter,Include NA values
+incl_na,#ExclNA,Constants,Formula Functions Include NA Parameter,Exclude NA values
+incl_na,#NANeutral,Constants,Formula Functions Include NA Parameter,NA Neutral
+scope,#SubSector,Constants,Formula Functions Scope Parameter,Operate within Sub-Sectors in selected universe
+scope,#SubIndustry,Constants,Formula Functions Scope Parameter,Operate within Sub-Industries in selected universe
+scope,#AssetClass,Constants,Formula Functions Scope Parameter,Operate within each ETF Class
+scope,#Style,Constants,Formula Functions Scope Parameter,Operate within each ETF Style
+scope,#Country,Constants,Formula Functions Scope Parameter,Operate within each ETF Country
+scope,#Method,Constants,Formula Functions Scope Parameter,Operate within each ETF Method
+scope,#All,Constants,Formula Functions Scope Parameter,Operate within selected universe
+scope,#Sector,Constants,Formula Functions Scope Parameter,Operate within Sectors in selected universe
+scope,#ETFSector,Constants,Formula Functions Scope Parameter,Operate within each ETF Sector
+scope,#Region,Constants,Formula Functions Scope Parameter,Operate within each ETF Region
+scope,#Previous,Constants,Formula Functions Scope Parameter,Operate on the results from previous rule
+scope,#Family,Constants,Formula Functions Scope Parameter,Operate within each ETF Family
+scope,#GroupVar,Constants,Formula Functions Scope Parameter,Operates on groups based on value of variable @Group
+scope,#Industry,Constants,Formula Functions Scope Parameter,Operate within Industries in selected universe
+scope,#Size,Constants,Formula Functions Scope Parameter,Operate within each ETF Size
+scope,#SP500,Constants,Formula Functions Scope Parameter,Operate within the SP500 stocks
+sort,#DESC,Constants,Formula Functions Sort Parameter,Sort descending
+sort,#ASC,Constants,Formula Functions Sort Parameter,Sort ascending
+sort_style,#Top,Constants,Formula Functions Sort Style Parameter,Top (Positive Bias)
+sort_style,#Neutral,Constants,Formula Functions Sort Style Parameter,Neutral
+NAHandling,FALLBACK,Constants,N/A during preliminaries,Fallback to previous period
+NAHandling,KEEPNA,Constants,N/A during preliminaries,Keep NA values
+NAHandling,ZERONA,Constants,N/A during preliminaries,Set NA values to 0
+period_bar,#Month,Constants,Numerical Constants,"Returns 21, the approximate number of bars in a month"
+period_bar,#Week,Constants,Numerical Constants,"Returns 5, the approximate number of bars in a week"
+period_bar,#Year,Constants,Numerical Constants,"Returns 251, the approximate number of bars in a year"
+period_bar,#Year2,Constants,Numerical Constants,"Returns 501, the approximate number of bars in two years"
+"zeroIsNA,excl_zero,ex_zero,ex_adrs,cnt_flag",FALSE,Constants,Numerical Constants,FALSE or 0
+"zeroIsNA,excl_zero,ex_zero,ex_adrs,cnt_flag",TRUE,Constants,Numerical Constants,TRUE or 1
+period_bar,#Month3,Constants,Numerical Constants,"Returns 62, the approximate number of bars in 3 months"
+period_bar,#Month6,Constants,Numerical Constants,"Returns 125, the approximate number of bars in 6 months"
+uname,ALLFUND,Constants,Universe IDs,All Fundamentals
+uname,ALLSTOCKS,Constants,Universe IDs,All Stocks
+uname,NOOTC,Constants,Universe IDs - Major USA,No OTC Exchange
+uname,SP500,Constants,Universe IDs - Major USA,iShares S&P500 LargeCap (IVV)
+uname,DJIA,Constants,Universe IDs - Major USA,Dow Jones Industrial Average
+uname,SP1500,Constants,Universe IDs - Major USA,iShares S&P1500 CompositeCap (IVV+IJH+IJR)
+uname,Prussell1000,Constants,Universe IDs - Major USA,Prussell 1000
+uname,Prussell2000,Constants,Universe IDs - Major USA,Prussell 2000
+uname,Prussell3000,Constants,Universe IDs - Major USA,Prussell 3000
+uname,SP400,Constants,Universe IDs - Other USA,iShares S&P400 MidCap (IJH)
+uname,SmallCap,Constants,Universe IDs - Other USA,Small Cap
+uname,SP600,Constants,Universe IDs - Other USA,iShares S&P600 SmallCap (IJR)
+uname,NYSE,Constants,Universe IDs - Other USA,NY Stock Exchange
+uname,NYSEMKT,Constants,Universe IDs - Other USA,NYSE MKT (AMEX)
+uname,OTC,Constants,Universe IDs - Other USA,Over The Counter
+uname,LargeCap,Constants,Universe IDs - Other USA,Large Cap
+uname,MasterLP,Constants,Universe IDs - Other USA,Master Limited Partnerships
+uname,MicroCap,Constants,Universe IDs - Other USA,MicroCap
+uname,MidCap,Constants,Universe IDs - Other USA,Mid Cap
+uname,NASD,Constants,Universe IDs - Other USA,NASDAQ Exchange
+uname,NASDAQ100,Constants,Universe IDs - Other USA,Nasdaq 100
+uname,$ADR,Constants,Universe IDs - Other USA,American Depositary Receipt
+series,##DELINQCC,Macro Series IDs (Adjusted),Macro - Delinquency Rate,"Delinquency Rate On Credit Card Loans, All Commercial Banks (quarterly)\n\nCorresponding FRED id=DRCCLACBS"
+series,##DELINQMORT,Macro Series IDs (Adjusted),Macro - Delinquency Rate,Delinquency Rate On Single-Family Residential Mortgages (quarterly)\n\nCorresponding FRED id=DRSFRMACBS
+series,##GNP,Macro Series IDs (Adjusted),Macro - GDP/GNP,Gross National Product (quarterly)\n\nCorresponding FRED id=GNP
+series,##RGDP,Macro Series IDs (Adjusted),Macro - GDP/GNP,Real Gross Domestic Product (quarterly)\n\nCorresponding FRED id=GDPC1
+series,##RINCPERCAP,Macro Series IDs (Adjusted),Macro - Income,Real Disposable Personal Income: Per capita (monthly)\n\nCorresponding FRED id=A229RX0
+series,##RMINCOME,Macro Series IDs (Adjusted),Macro - Income,Real Median Income (annual)\n\nCorresponding FRED id=MEHOINUSA672N
+series,##HDEBTSERV,Macro Series IDs (Adjusted),Macro - Income,Household Debt Service Payments as a Percent of Disposable Personal Income (quarterly)\n\nCorresponding FRED id=TDSP
+series,##RDISPINC,Macro Series IDs (Adjusted),Macro - Income,Real Disposable Personal Income (monthly)\n\nCorresponding FRED id=DSPIC96
+series,##UNWANT,Macro Series IDs (Adjusted),Macro - Labor Force,"Not in Labor Force, Want a Job Now (monthly)\n\nCorresponding FRED id=NILFWJN"
+series,##POPUL,Macro Series IDs (Adjusted),Macro - Labor Force,Total Population: All Ages including Armed Forces Overseas (monthly)\n\nCorresponding FRED id=POP
+series,##CIVLABOR,Macro Series IDs (Adjusted),Macro - Labor Force,Civilian Labor Force (monthly)\n\nCorresponding FRED id=CLF16OV
+series,##NONFARMEMPL,Macro Series IDs (Adjusted),Macro - Labor Force,All Employees: Total nonfarm (monthly)\n\nCorresponding FRED id=PAYEMS
+series,##LABORPARTIC,Macro Series IDs (Adjusted),Macro - Labor Force,Civilian Labor Force Participation Rate (monthly)\n\nCorresponding FRED id=CIVPART
+series,##INV2SHIP,Macro Series IDs (Adjusted),Macro - Manufacturing,Ratio of Total Inventories to Shipments for All Manufacturing Industries (monthly)\n\nCorresponding FRED id=AMTMUS
+series,##ORDERSCAP,Macro Series IDs (Adjusted),Macro - Manufacturing,Manufacturers' New Orders: Nondefense Capital Goods ex.Aircraft (monthly)\n\nCorresponding FRED id=NEWORDER
+series,##ORDERSDUR,Macro Series IDs (Adjusted),Macro - Manufacturing,Manufacturers' New Orders: Durable Goods (monthly)\n\nCorresponding FRED id=DGORDER
+series,##ORDERSUNFILL,Macro Series IDs (Adjusted),Macro - Manufacturing,Value of Unfilled Orders for All Manufacturing ex. Transportation (monthly)\n\nCorresponding FRED id=AMXTUO
+series,##WAGES,Macro Series IDs (Adjusted),Macro - Manufacturing,Wages in manufacturing (monthly)\n\nCorresponding FRED id=AHETPI
+series,##VELM1,Macro Series IDs (Adjusted),"Macro - Money, M1, M2",Velocity of M1 Money Stock (quarterly)\n\nCorresponding FRED id=M1V
+series,##VELM2,Macro Series IDs (Adjusted),"Macro - Money, M1, M2",Velocity of M2 Money Stock (quarterly)\n\nCorresponding FRED id=M2V
+series,##VELMZM,Macro Series IDs (Adjusted),"Macro - Money, M1, M2",Velocity of MZM Money Stock (quarterly)\n\nCorresponding FRED id=MZMV
+series,##MZM,Macro Series IDs (Adjusted),"Macro - Money, M1, M2",MZM Money Stock (weekly)\n\nCorresponding FRED id=MZM
+series,##ADJMBASE,Macro Series IDs (Adjusted),"Macro - Money, M1, M2",Monetary Base; Total (weekly)\n\nCorresponding FRED id=BOGMBASEW
+series,##M1,Macro Series IDs (Adjusted),"Macro - Money, M1, M2",M1 Money Stock (monthly)\n\nCorresponding FRED id=M1SL
+series,##M2,Macro Series IDs (Adjusted),"Macro - Money, M1, M2",M2 Money Stock (monthly)\n\nCorresponding FRED id=M2SL
+series,##USCURRACCT,Macro Series IDs (Adjusted),"Macro - Money, M1, M2",Balance on Current Account (quarterly)\n\nCorresponding FRED id=IEABC
+series,##CAPUTIL,Macro Series IDs (Adjusted),Macro - Other Business Activity,Capacity Utilization: Total Industry (monthly)\n\nCorresponding FRED id=TCU
+series,##CONSTR,Macro Series IDs (Adjusted),Macro - Other Business Activity,Total Construction Spending (monthly)\n\nCorresponding FRED id=TTLCONS
+series,##INV2SLS,Macro Series IDs (Adjusted),Macro - Other Business Activity,Total Business: Inventories to Sales Ratio (monthly)\n\nCorresponding FRED id=ISRATIO
+series,##HSTARTS,Macro Series IDs (Adjusted),Macro - Other Business Activity,Housing Starts (Total) (monthly)\n\nCorresponding FRED id=HOUST
+series,##INDPRO,Macro Series IDs (Adjusted),Macro - Other Business Activity,Industrial Production Index (monthly)\n\nCorresponding FRED id=INDPRO
+series,##INVTOT,Macro Series IDs (Adjusted),Macro - Other Business Activity,Total Business Inventories (monthly)\n\nCorresponding FRED id=BUSINV
+series,##SALESRET,Macro Series IDs (Adjusted),Macro - Other Business Activity,Retail Sales: Total (Excluding Food Services) (monthly)\n\nCorresponding FRED id=RSXFS
+series,##SALESRETFD,Macro Series IDs (Adjusted),Macro - Other Business Activity,Real Retail and Food Services Sales (monthly)\n\nCorresponding FRED id=RRSFS
+series,##SAVING,Macro Series IDs (Adjusted),Macro - Other Economic Activity,Personal Saving Rate (monthly)\n\nCorresponding FRED id=PSAVERT
+series,##SURPLUS,Macro Series IDs (Adjusted),Macro - Other Economic Activity,Federal Surplus or Deficit [-] (annual)\n\nCorresponding FRED id=FYFSD
+series,##RPCE,Macro Series IDs (Adjusted),Macro - Other Economic Activity,Real Personal Consumption Expenditures (monthly)\n\nCorresponding FRED id=PCEC96
+series,##DOMINV,Macro Series IDs (Adjusted),Macro - Other Economic Activity,Gross Private Domestic Investment (quarterly)\n\nCorresponding FRED id=GPDI
+series,##PCE,Macro Series IDs (Adjusted),Macro - Other Economic Activity,Personal Consumption Expenditures (monthly)\n\nCorresponding FRED id=PCE
+series,##USSLIND,Macro Series IDs (Adjusted),Macro - Other Economic Activity,Leading Index for the United States (monthly)\n\nCorresponding FRED id=USALOLITONOSTSAM
+series,##PPI,Macro Series IDs (Adjusted),"Macro - Price Index, CPI, PPI, HPI",Producer Price Index: Finished Goods (monthly)\n\nCorresponding FRED id=WPSFD49207
+series,##CPI,Macro Series IDs (Adjusted),"Macro - Price Index, CPI, PPI, HPI",CPI All Urban Consumers: All Items (monthly)\n\nCorresponding FRED id=CPIAUCSL
+series,##HPRICES,Macro Series IDs (Adjusted),"Macro - Price Index, CPI, PPI, HPI",S&P Case-Shiller 20-City Home Price Index© (monthly)\n\nCorresponding FRED id=SPCS20RSA
+series,##RECPROB,Macro Series IDs (Adjusted),Macro - Sentiment,Smoothed U.S. Recession Probabilities (monthly)\n\nCorresponding FRED id=RECPROUSM156N
+series,##UMCSENT,Macro Series IDs (Adjusted),Macro - Sentiment,University of Michigan: Consumer Sentiment© (monthly)\n\nCorresponding FRED id=UMCSENT
+series,##CLAIMSCONTINUE,Macro Series IDs (Adjusted),Macro - Unemployment,Continued Claims (Insured Unemployment) (weekly)\n\nCorresponding FRED id=CCSA
+series,##CLAIMSNEW,Macro Series IDs (Adjusted),Macro - Unemployment,Initial Claims (weekly)\n\nCorresponding FRED id=ICSA
+series,##UNDURATION,Macro Series IDs (Adjusted),Macro - Unemployment,Median Duration of Unemployment (monthly)\n\nCorresponding FRED id=UEMPMED
+series,##UNRATE,Macro Series IDs (Adjusted),Macro - Unemployment,Civilian Unemployment Rate (monthly)\n\nCorresponding FRED id=UNRATE
+series,##UNTEEN,Macro Series IDs (Adjusted),Macro - Unemployment,Unemployment Rate - 16 to 19 years (monthly)\n\nCorresponding FRED id=LNS14000012
+series,##UNTOT,Macro Series IDs (Adjusted),Macro - Unemployment,"Total unemployed, including under-employed (monthly)\n\nCorresponding FRED id=U6RATE"
+series,##PRODAUTO,Macro Series IDs (Adjusted),"Macro - Vehicle, Automobile",Domestic Auto Production (monthly)\n\nCorresponding FRED id=DAUPSA
+series,##SALESALLVEH,Macro Series IDs (Adjusted),"Macro - Vehicle, Automobile",Total Vehicle Sales (monthly)\n\nCorresponding FRED id=TOTALSA
+series,##SALESAUTO,Macro Series IDs (Adjusted),"Macro - Vehicle, Automobile",Light Weight Vehicle Sales: Autos & Light Trucks (monthly)\n\nCorresponding FRED id=ALTSALES
+series,##INV2SLSAUTO,Macro Series IDs (Adjusted),"Macro - Vehicle, Automobile",Auto Inventory/Sales Ratio (monthly)\n\nCorresponding FRED id=AISRSA
+series,#EMPLOY,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Total Non-Farm Employment, Thousands of People (monthly)"
+series,#PPI,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Producer Price Index (PPI), Finished Goods (monthly)"
+series,#HOUSE,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Total New Housing Starts, Privately Owned Residences, in thousands of units (monthly)"
+series,#FEDFUNDS,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Fed Funds Rate, in percentage points (monthly)"
+series,#GDP,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Real Gross Domestic Product, Billions of Chained 2009 Dollars  (*quarterly data, 3 equal monthly values)"
+series,#PRIME,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Prime Rate, in percentage points (monthly)"
+series,#RTLSALES,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Retail Sales, excluding Food Services, in millions of dollars (monthly)"
+series,#UNEMP,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Unemployment Rate, in percentage points (monthly)"
+series,#TBILL12M,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,12-Month Treasury Yield (monthly)
+series,#TBILL3M,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,3-Month Treasury Yield (monthly)
+series,#TBILL6M,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,6-Month Treasury Yield (monthly)
+series,#POPT,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Total U.S. Population  (*annual data, 12 equal monthly values)"
+series,#NOTE10YR,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,10-Year Treasury Yield (monthly)
+series,#NOTE2YR,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,2-Year Treasury Yield (monthly)
+series,#NOTE3YR,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,3-Year Treasury Yield (monthly)
+series,#NOTE5YR,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,5-Year Treasury Yield (monthly)
+series,#NOTE7YR,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,7-Year Treasury Yield (monthly)
+series,#CPI,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Consumer Price Index for Urban Consumers, All Items (monthly)"
+series,#M1,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"M1 Money Stock, in billions of dollars (monthly)"
+series,#M2,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"M2 Money Stock, in billions of dollars (monthly)"
+series,#CABGDP2,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,"Total Current Account Balance of the United States as a percentage of GDP (*quarterly data, 3 equal monthly values)"
+series,#BOND20YR,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,20-Year Treasury Yield (monthly)
+series,#BOND30YR,Macro Series IDs (Unadjusted),Compustat Macro - TO BE DEPRECATED,30-Year Treasury Yield (monthly)
+series,##CORPAAA,Macro Series IDs (Unadjusted),Macro - Corporate Bonds,BofA Merrill Lynch US Corporate AAA Effective Yield© (daily)\n\nCorresponding FRED id=BAMLC0A1CAAAEY
+series,##CORPB,Macro Series IDs (Unadjusted),Macro - Corporate Bonds,BofA Merrill Lynch US High Yield B Effective Yield© (daily)\n\nCorresponding FRED id=BAMLH0A2HYBEY
+series,##CORPBB,Macro Series IDs (Unadjusted),Macro - Corporate Bonds,BofA Merrill Lynch US High Yield BB Effective Yield© (daily)\n\nCorresponding FRED id=BAMLH0A1HYBBEY
+series,##CORPBBB,Macro Series IDs (Unadjusted),Macro - Corporate Bonds,BofA Merrill Lynch US Corporate BBB Effective Yield© (daily)\n\nCorresponding FRED id=BAMLC0A4CBBBEY
+series,##CORPBBBOAS,Macro Series IDs (Unadjusted),Macro - Corporate Bonds,BofA Merrill Lynch US Corporate BBB Option-Adjusted Spread (daily)\n\nCorresponding FRED id=BAMLC0A4CBBB
+series,##CORPBBOAS,Macro Series IDs (Unadjusted),Macro - Corporate Bonds,BofA Merrill Lynch US High Yield Master II Opt-Adj Spread (daily)\n\nCorresponding FRED id=BAMLH0A0HYM2
+series,##CORPJNK,Macro Series IDs (Unadjusted),Macro - Corporate Bonds,BofA Merrill Lynch US High Yield CCC or Below Effective Yield© (daily)\n\nCorresponding FRED id=BAMLH0A3HYCEY
+series,##SEB3MO,Macro Series IDs (Unadjusted),Macro - Interbank Rate,3-Month Interbank Rates for Sweden (monthly)\n\nCorresponding FRED id=IR3TIB01SEM156N
+series,##NOB3MO,Macro Series IDs (Unadjusted),Macro - Interbank Rate,3-Month Interbank Rates for Norway (monthly)\n\nCorresponding FRED id=IR3TIB01NOM156N
+series,##PLB3MO,Macro Series IDs (Unadjusted),Macro - Interbank Rate,3-Month Interbank Rates for Poland (monthly)\n\nCorresponding FRED id=IR3TIB01PLM156N
+series,##EUB3MO,Macro Series IDs (Unadjusted),Macro - Interbank Rate,3-Month Interbank Rate for the Euro Area (monthly)\n\nCorresponding FRED id=IR3TIB01EZM156N
+series,##GBB3MO,Macro Series IDs (Unadjusted),Macro - Interbank Rate,3-Month Interbank Rate for the United Kingdom (monthly)\n\nCorresponding FRED id=IR3TIB01GBM156N
+series,##CAB3MO,Macro Series IDs (Unadjusted),Macro - Interbank Rate,3-Month Interbank Rate for Canada (monthly)\n\nCorresponding FRED id=IR3TIB01CAM156N
+series,##FEDFUNDS,Macro Series IDs (Unadjusted),"Macro - Interest, Mortgage, Prime, TED",Effective Federal Funds Rate (daily)\n\nCorresponding FRED id=DFF
+series,##TEDSPREAD,Macro Series IDs (Unadjusted),"Macro - Interest, Mortgage, Prime, TED",TED Spread (daily)\n\nCorresponding FRED id=TEDRATE
+series,##PRIME,Macro Series IDs (Unadjusted),"Macro - Interest, Mortgage, Prime, TED",Bank Prime Loan Rate (monthly)\n\nCorresponding FRED id=MPRIME
+series,##MORT30Y,Macro Series IDs (Unadjusted),"Macro - Interest, Mortgage, Prime, TED",30-Year Fixed Rate Mortgage Average in the United States (weekly)\n\nCorresponding FRED id=MORTGAGE30US
+series,##OIL,Macro Series IDs (Unadjusted),"Macro - Oil, Gold Price","Crude Oil Prices: West Texas Intermediate (WTI) - Cushing, OK (daily)\n\nCorresponding FRED id=DCOILWTICO"
+series,##GOLD,Macro Series IDs (Unadjusted),"Macro - Oil, Gold Price","Gold Price in London Bullion Market, USD (daily)\n\nCorresponding FRED id=GOLDAMGBD228NLBM"
+series,##INFLEXP,Macro Series IDs (Unadjusted),Macro - Sentiment,University of Michigan Inflation Expectation© (monthly)\n\nCorresponding FRED id=MICH
+series,##STRESS,Macro Series IDs (Unadjusted),Macro - Stress Index,St. Louis Fed Financial Stress Index© (weekly)\n\nCorresponding FRED id=STLFSI4
+series,##UST1MO,Macro Series IDs (Unadjusted),Macro - Treasury bills (T-bills),1-Month Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS1MO
+series,##UST1YR,Macro Series IDs (Unadjusted),Macro - Treasury bills (T-bills),1-Year Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS1
+series,##UST3MO,Macro Series IDs (Unadjusted),Macro - Treasury bills (T-bills),3-Month Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS3MO
+series,##UST20YR,Macro Series IDs (Unadjusted),Macro - Treasury bonds (T-bonds),20-Year Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS20
+series,##UST30YR,Macro Series IDs (Unadjusted),Macro - Treasury bonds (T-bonds),30-Year Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS30
+series,##UST2YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),2-Year Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS2
+series,##UST10YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),10-Year Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS10
+series,##UST5YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),5-Year Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS5
+series,##UST6MO,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),6-Month Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS6MO
+series,##UST7YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),7-Year Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS7
+series,##UST3YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),3-Year Treasury Constant Maturity Rate (USD) (daily)\n\nCorresponding FRED id=DGS3
+series,##CHT10YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),10-Year Government Bond Yield for Switzerland (monthly)\n\nCorresponding FRED id=IRLTLT01CHM156N
+series,##CAT10YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),10-Year Government Bond Yield for Canada (monthly)\n\nCorresponding FRED id=IRLTLT01CAM156N
+series,##EUT10YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),10-Year Government Bond Yield for the Euro Area (monthly)\n\nCorresponding FRED id=IRLTLT01EZM156N
+series,##GBT10YR,Macro Series IDs (Unadjusted),Macro - Treasury notes (T-notes),10-Year Government Bond Yield for the United Kingdom (monthly)\n\nCorresponding FRED id=IRLTLT01GBM156N
+series,##HVACANCY,Macro Series IDs (Unadjusted),Macro - Vacancy Rates,Home Vacancy Rate for the United States (annual)\n\nCorresponding FRED id=USHVAC
+series,##RVACANCY,Macro Series IDs (Unadjusted),Macro - Vacancy Rates,Rental Vacancy Rate for the United States (annual)\n\nCorresponding FRED id=USRVAC
+rcode,ENVISVCE,RBICS Codes,Business Services,"10102530 - Environmental Services\nSince 2021-08-21, previously part of WASTESVCE, FACIL, and PRECIOUS"
+rcode,BIZSVCESS,RBICS Codes,Business Services,1010 - Business Services
+rcode,BIZSVCE,RBICS Codes,Business Services,10 - Business Services
+rcode,MKTINGPRINTING,RBICS Codes,Business Services,101010 - Marketing and Printing Services
+rcode,ADVERTISING,RBICS Codes,Business Services,10101010 - Marketing and Advertising Services
+rcode,PRINTING,RBICS Codes,Business Services,10101015 - Printing Services
+rcode,PROSVCE,RBICS Codes,Business Services,101015 - Other Professional Services
+rcode,ADMINSVCE,RBICS Codes,Business Services,10101510 - Administrative Services
+rcode,CONSULTING,RBICS Codes,Business Services,10101515 - Consulting/Business Process Outsourcing Services
+rcode,PROSVCEOTHER,RBICS Codes,Business Services,10101520 - Other Professional Services
+rcode,BIZSUPPORT,RBICS Codes,Business Services,101020 - Business Support Services
+rcode,FACILSVCE,RBICS Codes,Business Services,10102010 - Facilities and Other Support Services
+rcode,SECURITYSVCE,RBICS Codes,Business Services,10102015 - Security Services
+rcode,WASTEMGMT,RBICS Codes,Business Services,101025 - Waste Management Services
+rcode,WASTECOLLECTION,RBICS Codes,Business Services,10102510 - General Waste Collection
+rcode,HAZMAT,RBICS Codes,Business Services,10102515 - Hazardous Materials Disposal
+rcode,WASTESVCE,RBICS Codes,Business Services,10102520 - Other Waste Services
+rcode,WASTEWATER,RBICS Codes,Business Services,10102525 - Wastewater Treatment Services
+rcode,CYCLICALS,RBICS Codes,Consumer Cyclicals,20 - Consumer Cyclicals
+rcode,CONSUMERGOODS,RBICS Codes,Consumer Cyclicals,2010 - Consumer Goods
+rcode,APPARELPRODUCTS,RBICS Codes,Consumer Cyclicals,201010 - Apparel and Accessory Products
+rcode,ACCESSORIESMFR,RBICS Codes,Consumer Cyclicals,20101010 - Accessories Production
+rcode,CLOTHINGMFR,RBICS Codes,Consumer Cyclicals,20101015 - Apparel and Footwear Production
+rcode,APPARELMFR,RBICS Codes,Consumer Cyclicals,20101020 - Multi-Type Apparel and Accessories Production
+rcode,LEISURE,RBICS Codes,Consumer Cyclicals,201015 - Leisure Goods Products
+rcode,LEISUREOTHER,RBICS Codes,Consumer Cyclicals,20101510 - Other Leisure Goods
+rcode,RECREATIONALGOODS,RBICS Codes,Consumer Cyclicals,20101515 - Recreational Goods
+rcode,SPORTINGGOODS,RBICS Codes,Consumer Cyclicals,20101520 - Sporting and Athletic Goods
+rcode,APPLIANCESFURN,RBICS Codes,Consumer Cyclicals,201020 - Household Appliances and Furnishings Production
+rcode,RETAILMISC,RBICS Codes,Consumer Cyclicals,2015 - Miscellaneous Retail
+rcode,AUTORETAIL,RBICS Codes,Consumer Cyclicals,201510 - Auto Retail
+rcode,AUTOSVCE,RBICS Codes,Consumer Cyclicals,20151010 - Automotive Services
+rcode,AUTOSALES,RBICS Codes,Consumer Cyclicals,20151015 - Motor Vehicle Sales
+rcode,AUTOPARTSSALESRENT,RBICS Codes,Consumer Cyclicals,20151020 - Motor Vehicles and Parts Sales and Rental
+rcode,RETAILOTHER,RBICS Codes,Consumer Cyclicals,201515 - Other Retail
+rcode,AUCTION,RBICS Codes,Consumer Cyclicals,20151510 - Auction Houses and Authentication Services
+rcode,GASSTATION,RBICS Codes,Consumer Cyclicals,20151515 - Gasoline Stations
+rcode,OFFICESUPPLY,RBICS Codes,Consumer Cyclicals,20151520 - Office Supplies and Stationery Retail
+rcode,PETS,RBICS Codes,Consumer Cyclicals,20151525 - Pet and Pet Supply Retail
+rcode,RETAILSOFTW,RBICS Codes,Consumer Cyclicals,20151530 - Retail Industry Software
+rcode,HOMEBUILDMANUF,RBICS Codes,Consumer Cyclicals,"201520 - Home Builders and Manufactured Buildings\nSince 2020-07-19, previously HOMEBUILDMANUF.XX1"
+rcode,HOMEBUILD,RBICS Codes,Consumer Cyclicals,"20152015 - Home Builders\nSince 2020-07-19, previously HOMEBUILD.XX1"
+rcode,MFRBUILDING,RBICS Codes,Consumer Cyclicals,"20152020 - Manufactured Building Makers\nSince 2020-07-19, previously MFRBUILDING.XX1"
+rcode,VEHICLE,RBICS Codes,Consumer Cyclicals,202010 - Consumer Vehicles and Parts
+rcode,AUTOPARTSMFR,RBICS Codes,Consumer Cyclicals,20201010 - Consumer Vehicle Parts Manufacturing
+rcode,AUTOMFR,RBICS Codes,Consumer Cyclicals,20201015 - Consumer Vehicle Manufacturing
+rcode,CONSUMERRETAIL,RBICS Codes,Consumer Cyclicals,2025 - Consumer Retail
+rcode,APPARELRETAIL,RBICS Codes,Consumer Cyclicals,202510 - Apparel and Accessories Retail
+rcode,ACCESSORIESRETAIL,RBICS Codes,Consumer Cyclicals,20251010 - Accessories Retail
+rcode,CLOTHINGACCESSORIESRETAIL,RBICS Codes,Consumer Cyclicals,20251015 - Mixed Apparel and Accessories Retail
+rcode,CLOTHINGRETAIL,RBICS Codes,Consumer Cyclicals,20251020 - Apparel Retail
+rcode,SHOES,RBICS Codes,Consumer Cyclicals,20251025 - Footwear Retail
+rcode,ELECTRONICSENTRETAIL,RBICS Codes,Consumer Cyclicals,202515 - Electronics and Entertainment Retail
+rcode,ELECTRONICSRETAIL,RBICS Codes,Consumer Cyclicals,20251510 - Electronics Retail
+rcode,ENTRETAIL,RBICS Codes,Consumer Cyclicals,20251515 - Entertainment Retail
+rcode,ELECTRONICSENTMIXRETAIL,RBICS Codes,Consumer Cyclicals,20251520 - Mixed Electronics and Entertainment Retail
+rcode,HOMEIMPROVE,RBICS Codes,Consumer Cyclicals,202520 - Home Improvement Retail
+rcode,BUILDINGMAT,RBICS Codes,Consumer Cyclicals,20252010 - Building Materials and Garden Supply Stores
+rcode,STOREFURNITURE,RBICS Codes,Consumer Cyclicals,20252015 - Furniture and Home Furnishings Stores
+rcode,HOMEIMPROV,RBICS Codes,Consumer Cyclicals,20252020 - Mixed Home Improvement and Furnishings Stores
+rcode,VEHICLESS,RBICS Codes,Consumer Cyclicals,2020 - Consumer Vehicles and Parts
+rcode,EVSTATION,RBICS Codes,Consumer Cyclicals,"20151535 - Electric Vehicle Charging Stations\nSince 2021-08-21, previously part of GASSTATION"
+rcode,CANNABISRETAIL,RBICS Codes,Consumer Cyclicals,20151540 - Cannabis Dispensary/Retail
+rcode,CANNABIS,RBICS Codes,Consumer Non-Cyclicals,"501525 - Cannabis Production\nSince 2022-07-30, previously part of CROP"
+rcode,HOUSESVCESS,RBICS Codes,Consumer Non-Cyclicals,5025 - Household Services
+rcode,PERSONALCARERETAILGEN,RBICS Codes,Consumer Non-Cyclicals,50102010 - General Health and Personal Care Retail
+rcode,GENMERCH,RBICS Codes,Consumer Non-Cyclicals,501015 - General Merchandise Retail
+rcode,STOREDEPT,RBICS Codes,Consumer Non-Cyclicals,50101510 - Department Stores
+rcode,STOREDISC,RBICS Codes,Consumer Non-Cyclicals,50101515 - Discount Stores
+rcode,MERCHRETAIL,RBICS Codes,Consumer Non-Cyclicals,50101520 - General Merchandise Retailers
+rcode,OFFPRICERETAIL,RBICS Codes,Consumer Non-Cyclicals,50101525 - Off-Price Retailers
+rcode,WAREHOUSECLUB,RBICS Codes,Consumer Non-Cyclicals,50101530 - Warehouse Clubs and Superstores
+rcode,PERSONALCARERETAIL,RBICS Codes,Consumer Non-Cyclicals,501020 - Health and Personal Care Retail
+rcode,PERSONALCARERETAILOTHER,RBICS Codes,Consumer Non-Cyclicals,50102010 - General Health and Personal Care Retail
+rcode,PHARMACY,RBICS Codes,Consumer Non-Cyclicals,50102015 - Pharmacies and Drug Retailers
+rcode,FOODPRODUCTION,RBICS Codes,Consumer Non-Cyclicals,5015 - Food and Tobacco Production
+rcode,AGRICULTURE,RBICS Codes,Consumer Non-Cyclicals,501510 - Agriculture
+rcode,ANIMAL,RBICS Codes,Consumer Non-Cyclicals,50151010 - Animal Production
+rcode,CROP,RBICS Codes,Consumer Non-Cyclicals,50151015 - Crop Production
+rcode,AGRICDIV,RBICS Codes,Consumer Non-Cyclicals,50151020 - Diversified Agriculture Production
+rcode,AGRICSUPPORT,RBICS Codes,Consumer Non-Cyclicals,50151025 - Agricultural Support Activity Providers
+rcode,FOODDRINKMFR,RBICS Codes,Consumer Non-Cyclicals,501515 - Food and Beverage Production
+rcode,BEVERAGE,RBICS Codes,Consumer Non-Cyclicals,50151510 - Beverages Production
+rcode,FOOD,RBICS Codes,Consumer Non-Cyclicals,50151515 - Food Production
+rcode,FOODDRINKMFRGEN,RBICS Codes,Consumer Non-Cyclicals,50151520 - General Food and Beverage Production
+rcode,TOBACCO,RBICS Codes,Consumer Non-Cyclicals,501520 - Tobacco Production
+rcode,CIGARETTE,RBICS Codes,Consumer Non-Cyclicals,50152010 - Cigarette Manufacturing
+rcode,TOBACCOMFRGEN,RBICS Codes,Consumer Non-Cyclicals,50152015 - General Tobacco Manufacturing
+rcode,TOBACCOPRODUCT,RBICS Codes,Consumer Non-Cyclicals,50152020 - Other Tobacco Product Makers
+rcode,ECIGARETTE,RBICS Codes,Consumer Non-Cyclicals,"50152025 - Electronic Cigarette Manufacturing\nSince 2018-02-02, previously part of TOBACCOMFRGEN and TOBACCOPRODUCT"
+rcode,PRODHOUSESUBSECT,RBICS Codes,Consumer Non-Cyclicals,5020 - Household Products
+rcode,NONCYCLICAL,RBICS Codes,Consumer Non-Cyclicals,50 - Consumer Non-Cyclicals
+rcode,STAPLESRETAIL,RBICS Codes,Consumer Non-Cyclicals,5010 - Food and Staples Retail
+rcode,FOODDRINKRETAIL,RBICS Codes,Consumer Non-Cyclicals,501010 - Food and Beverage Retail
+rcode,STOREFOOD,RBICS Codes,Consumer Non-Cyclicals,50101010 - Beverage and Specialty Foods Stores
+rcode,FOODDRINKRETAILGEN,RBICS Codes,Consumer Non-Cyclicals,50101015 - General Food and Beverage Retail
+rcode,GROCERY,RBICS Codes,Consumer Non-Cyclicals,50101020 - Grocery Stores
+rcode,RETAILDISTRIB,RBICS Codes,Consumer Non-Cyclicals,50101025 - Retail Distributors
+rcode,APPLIANCESTOOLS,RBICS Codes,Consumer Non-Cyclicals,502010 - Household Appliances and Tools
+rcode,APPLIANCESTOOLSDIV,RBICS Codes,Consumer Non-Cyclicals,50201010 - Diversified Household Appliances and Tools
+rcode,APPLIANCESSMALL,RBICS Codes,Consumer Non-Cyclicals,50201015 - Small Appliances and Accessories Manufacturing
+rcode,PRODHOUSEIND,RBICS Codes,Consumer Non-Cyclicals,502015 - Household Products
+rcode,BABYMFR,RBICS Codes,Consumer Non-Cyclicals,50201510 - Baby Accessories Manufacturing
+rcode,PRODHOUSEDIV,RBICS Codes,Consumer Non-Cyclicals,50201515 - Diversified Household Products Makers
+rcode,HOMEOFFICEFURNMFR,RBICS Codes,Consumer Non-Cyclicals,50201520 - Home and Office Furnishings Manufacturing
+rcode,PERSONALCAREPRODUCT,RBICS Codes,Consumer Non-Cyclicals,502020 - Personal Care and Cleaning Products
+rcode,ABSORBENT,RBICS Codes,Consumer Non-Cyclicals,50202010 - Absorbent Products Manufacturing
+rcode,COSMETICS,RBICS Codes,Consumer Non-Cyclicals,50202015 - Cosmetics Products
+rcode,FRAGRANCE,RBICS Codes,Consumer Non-Cyclicals,50202020 - Personal Care Fragrance Products
+rcode,PERSONALCAREGEN,RBICS Codes,Consumer Non-Cyclicals,50202025 - General Personal Care and Cleaning Products Makers
+rcode,HAIRCARE,RBICS Codes,Consumer Non-Cyclicals,50202030 - Hair Care Products
+rcode,CLEANING,RBICS Codes,Consumer Non-Cyclicals,50202035 - Household Cleaning Products
+rcode,SANITARY,RBICS Codes,Consumer Non-Cyclicals,50202040 - Sanitary and Personal Care Paper Products
+rcode,SKINCARE,RBICS Codes,Consumer Non-Cyclicals,50202045 - Skin Care Products
+rcode,HOUSESVCE,RBICS Codes,Consumer Non-Cyclicals,502510 - Personal Professional Services
+rcode,EDUCATION,RBICS Codes,Consumer Non-Cyclicals,50251010 - Educational Services
+rcode,PERSONALSVCE,RBICS Codes,Consumer Non-Cyclicals,50251015 - Personal Services
+rcode,HOSPITALITY,RBICS Codes,Consumer Services,151010 - Hospitality Services
+rcode,HOTEL,RBICS Codes,Consumer Services,15101010 - Accommodation Providers
+rcode,ARTSENT,RBICS Codes,Consumer Services,"15101015 - Arts, Entertainment and Recreation Providers"
+rcode,FOODDRINKSVCE,RBICS Codes,Consumer Services,15101020 - Other Food and Beverage Services
+rcode,RESTAURANT,RBICS Codes,Consumer Services,15101025 - Restaurants and Bars
+rcode,TRAVEL,RBICS Codes,Consumer Services,15101030 - Travel Arrangement and Reservation Services
+rcode,MEDIAPUB,RBICS Codes,Consumer Services,151510 - Media and Publishing Services
+rcode,BROADCAST,RBICS Codes,Consumer Services,15151010 - Broadcast Media Services
+rcode,ENTERTAINMENT,RBICS Codes,Consumer Services,15151015 - Entertainment and Programming Providers
+rcode,BOOKS,RBICS Codes,Consumer Services,15151020 - Print Media and Publishing Services
+rcode,CONSUMERSVCE,RBICS Codes,Consumer Services,15 - Consumer Services
+rcode,MEDIAPUBSS,RBICS Codes,Consumer Services,1515 - Media and Publishing Services
+rcode,HOSPITALITYSS,RBICS Codes,Consumer Services,1510 - Hospitality Services
+rcode,OILGASINTEGSS,RBICS Codes,Energy,"2520 - Integrated Oil and Gas Exploration and Production\nSince 2018-02-02, previously FOSSILFUELINT.XX1"
+rcode,COALSTREAMING,RBICS Codes,Energy,25101040 - Coal Streaming and Royalties
+rcode,GATHERPROCESSSVCE,RBICS Codes,Energy,25151525 - Gathering and Processing Services\nSince 2024-07-27
+rcode,ENERGY,RBICS Codes,Energy,25 - Energy
+rcode,UPSTREAMENERGY,RBICS Codes,Energy,2510 - Upstream Energy
+rcode,COAL,RBICS Codes,Energy,251010 - Coal and Uranium Mining
+rcode,COALAMER,RBICS Codes,Energy,25101010 - Americas Coal Mining
+rcode,COALASIA,RBICS Codes,Energy,25101015 - Asia/Pacific International Coal Mining
+rcode,COALINTL,RBICS Codes,Energy,25101020 - Other International Coal Mining
+rcode,URANIUMRADIUMVANADIUM.XX1,RBICS Codes,Energy,"25101025 - Uranium, Radium and Vanadium Mining\nDiscontinued 2020-07-19, replaced by RADIUMVANADIUM, URANIUM, and OREBASE"
+rcode,RADIUMVANADIUM,RBICS Codes,Energy,"25101030 - Radium and Vanadium Mining\nSince 2020-07-19, previously part of URANIUMRADIUMVANADIUM.XX1"
+rcode,URANIUM,RBICS Codes,Energy,"25101035 - Uranium Mining\nSince 2020-07-19, previously part of URANIUMRADIUMVANADIUM.XX1"
+rcode,FOSSILFUEL,RBICS Codes,Energy,251015 - Fossil Fuel Exploration and Production
+rcode,FOSSILFUELAMER,RBICS Codes,Energy,25101510 - Americas Fossil Fuel Exploration and Production
+rcode,FOSSILFUELINT.XX1,RBICS Codes,Energy,"25101515 - Integrated Oil and Gas Exploration and Production\nDiscontinued 2018-02-02, replaced by OILGASINTEG"
+rcode,FOSSILFUELOTHER,RBICS Codes,Energy,25101520 - Other Fossil Fuel Exploration and Production
+rcode,OILGASSUPPORT,RBICS Codes,Energy,251020 - Support Activities for Oil and Gas Operations
+rcode,OILGASTRANSPORT,RBICS Codes,Energy,25102010 - Oil and Gas Transportation and Infrastructure
+rcode,OILGASFIELD,RBICS Codes,Energy,25102015 - Oil and Gas Field Support Activities
+rcode,OILGASOPER,RBICS Codes,Energy,25102020 - Oil and Gas Operations Support Activities
+rcode,DOWNMIDSTREAMENERGY,RBICS Codes,Energy,2515 - Downstream and Midstream Energy
+rcode,DOWNSTREAMENERGY,RBICS Codes,Energy,251510 - Downstream Energy
+rcode,LPGPROPANE,RBICS Codes,Energy,"25151010 - LPG, Propane and Other Distributors"
+rcode,REFINERIES,RBICS Codes,Energy,25151015 - Petroleum Refineries
+rcode,MIDSTREAMENERGY,RBICS Codes,Energy,251515 - Midstream Energy
+rcode,NATGASPIPELINE,RBICS Codes,Energy,25151510 - Natural Gas Pipeline and Storage Services
+rcode,PIPELINEOTHER,RBICS Codes,Energy,25151515 - Other Pipeline and Energy Storage Services
+rcode,PETROLPIPELINE,RBICS Codes,Energy,25151520 - Petroleum Liquid Pipeline and Storage
+rcode,OILGASINTEG,RBICS Codes,Energy,"252010 - Integrated Oil and Gas Exploration and Production\nSince 2018-02-02, previously FOSSILFUELINT.XX1"
+rcode,FINANCIAL,RBICS Codes,Finance,30 - Finance
+rcode,BANKS,RBICS Codes,Finance,3010 - Banking
+rcode,BANKSINTL,RBICS Codes,Finance,301010 - International Banks
+rcode,BANKSAMEREXUS,RBICS Codes,Finance,30101010 - Americas Banks
+rcode,BANKSASIA,RBICS Codes,Finance,30101015 - Asia/Pacific Banks
+rcode,BANKSEUROPE,RBICS Codes,Finance,"30101020 - Europe, Middle East and Africa Banks"
+rcode,BANKSMULTINAT,RBICS Codes,Finance,30101025 - Multinational Banks
+rcode,BANKSMORTG,RBICS Codes,Finance,301015 - Mortgage Banking
+rcode,BANKSUSA,RBICS Codes,Finance,301020 - United States Banks
+rcode,BANKSCOMMERCIAL,RBICS Codes,Finance,30102010 - United States Commercial Banks
+rcode,SAVINGSLOAN,RBICS Codes,Finance,30102015 - United States Savings Institutions
+rcode,BANKSINTERNET,RBICS Codes,Finance,"30102025 - United States Internet Banks\nSince 2020-07-18, previously part of BANKSCOMMERCIAL"
+rcode,INSURANCE,RBICS Codes,Finance,301510 - Insurance
+rcode,INSBROKER,RBICS Codes,Finance,30151010 - Insurance Brokerage
+rcode,INSLIFEHEALTH,RBICS Codes,Finance,30151015 - Life and Health Insurance
+rcode,INSPROPCAS,RBICS Codes,Finance,30151020 - Property and Casualty Insurance
+rcode,INSRE,RBICS Codes,Finance,30151025 - Reinsurance
+rcode,INSDIV,RBICS Codes,Finance,30151030 - Diversified Insurance
+rcode,INVESTSVCE,RBICS Codes,Finance,302010 - Investment Services
+rcode,ASSETMGMT,RBICS Codes,Finance,30201010 - Asset Management and Financial Advisory Services
+rcode,INVESTBANK,RBICS Codes,Finance,30201015 - Investment Banking and Corporate Finance
+rcode,INVESTHOLDING,RBICS Codes,Finance,30201020 - Investment Holding Companies
+rcode,SECURITIES,RBICS Codes,Finance,30201025 - Securities Sales and Trading Services
+rcode,INVESTDIV,RBICS Codes,Finance,30201030 - Diversified Investment
+rcode,REALESTATE,RBICS Codes,Finance,3025 - Real Estate
+rcode,HOMEBUILDMANUF.XX1,RBICS Codes,Finance,"302510 - Home Builders and Manufactured Buildings\nDiscontinued 2020-07-19, replaced by HOMEBUILDMANUF"
+rcode,HOMEBUILD.XX1,RBICS Codes,Finance,"30251010 - Home Builders\nDiscontinued 2020-07-19, replaced by HOMEBUILD"
+rcode,MFRBUILDING.XX1,RBICS Codes,Finance,"30251015 - Manufactured Building Makers\nDiscontinued 2020-07-19, replaced by MFRBUILDING"
+rcode,REALESTATESVCE,RBICS Codes,Finance,302515 - Real Estate Investment and Services
+rcode,REALESTATESVCEOTHER,RBICS Codes,Finance,30251510 - Other Real Estate Investment and Services
+rcode,PROPERTY,RBICS Codes,Finance,30251515 - Property Owners
+rcode,REIT,RBICS Codes,Finance,302520 - Real Estate Investment Trusts (REITs)
+rcode,REITDIV,RBICS Codes,Finance,30252010 - Diversified REITs
+rcode,REITEQUITY,RBICS Codes,Finance,30252015 - Equity REITs
+rcode,REITMORTG,RBICS Codes,Finance,30252020 - Mortgage REITs
+rcode,FINSPECIAL,RBICS Codes,Finance,303010 - Specialty Finance
+rcode,FINCOMMSVCE,RBICS Codes,Finance,30301010 - Commercial Finance Services
+rcode,FINCONSUMERSVCE,RBICS Codes,Finance,30301015 - Consumer Finance Services
+rcode,FINSOFTW,RBICS Codes,Finance,303015 - Finance Software and Services
+rcode,INSURANCESS,RBICS Codes,Finance,3015 - Insurance
+rcode,INVESTSVCESS,RBICS Codes,Finance,3020 - Investment Services
+rcode,CREDITUNIONS,RBICS Codes,Finance,30102020 - United States Credit Unions\nSince 2020-07-18
+rcode,FINSVCE,RBICS Codes,Finance,3030 - Specialty Finance and Services
+rcode,HEALTHCARE,RBICS Codes,Healthcare,35 - Healthcare
+rcode,BIOPHARMA,RBICS Codes,Healthcare,3510 - Biopharmaceuticals
+rcode,BIOPHARMANONSYS,RBICS Codes,Healthcare,351010 - Non-System-Specific Biopharmaceuticals
+rcode,INFECTIOUS,RBICS Codes,Healthcare,35101010 - Infectious Disease Biopharmaceuticals
+rcode,ONCOLOGY,RBICS Codes,Healthcare,35101015 - Oncology Biopharmaceuticals
+rcode,BIOPHARMAOTHER,RBICS Codes,Healthcare,351015 - Other Biopharmaceuticals
+rcode,ALLERGIES,RBICS Codes,Healthcare,35101510 - Allergies Biopharmaceuticals
+rcode,PAINMGMT,RBICS Codes,Healthcare,35101515 - Pain Management Biopharmaceuticals
+rcode,SURGICAL,RBICS Codes,Healthcare,35101520 - Surgical Biopharmaceuticals
+rcode,TOXICOLOGY,RBICS Codes,Healthcare,35101525 - Toxicology Biopharmaceuticals
+rcode,TRANSPLANTATION,RBICS Codes,Healthcare,35101530 - Transplantation Biopharmaceuticals
+rcode,WEIGHTMGMT,RBICS Codes,Healthcare,35101535 - Weight Management Biopharmaceuticals
+rcode,BIOPHARMADIV,RBICS Codes,Healthcare,35101540 - Diversified Biopharmaceuticals
+rcode,BIOPHARMASYS,RBICS Codes,Healthcare,351020 - System-Specific Biopharmaceuticals
+rcode,CARDIOVASCULAR,RBICS Codes,Healthcare,35102010 - Cardiovascular System Biopharmaceuticals
+rcode,DERMATOLOGY,RBICS Codes,Healthcare,35102015 - Dermatology Biopharmaceuticals
+rcode,DIGESTIVE,RBICS Codes,Healthcare,35102020 - Digestive System Biopharmaceuticals
+rcode,ENDOCRINOLOGY,RBICS Codes,Healthcare,35102025 - Endocrinology and Metabolism Biopharmaceuticals
+rcode,HEMATOLOGY,RBICS Codes,Healthcare,35102030 - Hematology Biopharmaceuticals
+rcode,IMMUNOLOGY,RBICS Codes,Healthcare,35102035 - Immunology Biopharmaceuticals
+rcode,MUSCULOSKELETAL,RBICS Codes,Healthcare,35102040 - Musculoskeletal System Biopharmaceuticals
+rcode,NEUROLOGY,RBICS Codes,Healthcare,35102045 - Neurology Biopharmaceuticals
+rcode,OBSTETRICS,RBICS Codes,Healthcare,35102050 - Obstetrics and Gynecology Biopharmaceuticals
+rcode,OPHTHALMOLOGY,RBICS Codes,Healthcare,35102055 - Ophthalmology Biopharmaceuticals
+rcode,RESPIRATORY,RBICS Codes,Healthcare,35102060 - Respiratory System Biopharmaceuticals
+rcode,UROLOGY,RBICS Codes,Healthcare,35102065 - Urology Biopharmaceuticals
+rcode,HCARESVCE,RBICS Codes,Healthcare,3515 - Healthcare Services
+rcode,HCARESUPPORT,RBICS Codes,Healthcare,351510 - Healthcare Support Services
+rcode,HPLAN,RBICS Codes,Healthcare,35151010 - Health Plan Providers
+rcode,HCAREADMIN,RBICS Codes,Healthcare,35151015 - Healthcare Administrative Support Services
+rcode,HCAREDISTRIB,RBICS Codes,Healthcare,35151020 - Healthcare Distributors
+rcode,HCARESUPPORTOTHER,RBICS Codes,Healthcare,35151025 - Other Healthcare Support Services
+rcode,PATIENTCARE,RBICS Codes,Healthcare,351515 - Patient Care
+rcode,ACUTECARE,RBICS Codes,Healthcare,35151510 - Acute Care and Institutional Patient Care
+rcode,AMBULANCE,RBICS Codes,Healthcare,35151515 - Ambulatory and Outpatient Diagnostic Patient Care
+rcode,LTCARE,RBICS Codes,Healthcare,35151520 - Long-Term Care Facilities
+rcode,MULTIDELIVCARE,RBICS Codes,Healthcare,35151525 - Multi-Delivery-Type Patient Care
+rcode,AMBULANCEOTHER,RBICS Codes,Healthcare,35151530 - Other Ambulatory and Outpatient Patient Care
+rcode,HCAREMISC,RBICS Codes,Healthcare,351520 - Miscellaneous Healthcare
+rcode,NUTRITION,RBICS Codes,Healthcare,35152010 - Nutritional Health Pharmaceuticals
+rcode,OUTSOURCEDBIOMED,RBICS Codes,Healthcare,35152015 - Other Outsourced Biomedical Services
+rcode,OUTSOURCEDDRUG,RBICS Codes,Healthcare,35152020 - Outsourced Drug Services
+rcode,HCARESCIPRODUCTS,RBICS Codes,Healthcare,35152025 - Scientific Products
+rcode,VETERINARY,RBICS Codes,Healthcare,35152030 - Veterinary Products and Services
+rcode,HCARESVCEDIV,RBICS Codes,Healthcare,35152035 - Diversified Healthcare Services
+rcode,HCAREOUTSOURCE,RBICS Codes,Healthcare,351525 - Outsourced Development and Manufacturing Services
+rcode,HCARECONTRACTMFR,RBICS Codes,Healthcare,35152510 - Contract Manufacturing Organizations
+rcode,HCARECONTRACTRESEARCH,RBICS Codes,Healthcare,35152515 - Contract Research Organizations
+rcode,HCAREDEV,RBICS Codes,Healthcare,35152520 - Development and Manufacturing Services
+rcode,HCAREEQUIP,RBICS Codes,Healthcare,3520 - Healthcare Equipment
+rcode,HCAREDIAGNOSTICS,RBICS Codes,Healthcare,352010 - Diagnostics and Drug Delivery Devices
+rcode,DIAGNOSTIC,RBICS Codes,Healthcare,35201010 - Clinical Diagnostics Devices
+rcode,DRUGDELIV,RBICS Codes,Healthcare,35201015 - Drug Delivery Devices
+rcode,MEDDEVICESGEN,RBICS Codes,Healthcare,352015 - General Medical Devices
+rcode,SYSTEMSPECIFIC,RBICS Codes,Healthcare,35201510 - System-Specific General Medical Devices
+rcode,MEDDEVICESDIV,RBICS Codes,Healthcare,35201515 - Diversified Medical Devices and Instruments
+rcode,MEDDEVICESOTHER,RBICS Codes,Healthcare,352020 - Other Medical Devices
+rcode,MEDSUPPLIES,RBICS Codes,Healthcare,35202010 - Medical Supplies
+rcode,MEDDEVICESSPECIAL,RBICS Codes,Healthcare,35202015 - Specialized Medical Devices
+rcode,INDUSTRIAL,RBICS Codes,Industrials,40 - Industrials
+rcode,INDMFR,RBICS Codes,Industrials,4010 - Industrial Manufacturing
+rcode,AERODEF,RBICS Codes,Industrials,401010 - Aerospace and Defense Manufacturing
+rcode,AEROSPACEEQUIP,RBICS Codes,Industrials,40101010 - Aerospace Equipment
+rcode,DEF,RBICS Codes,Industrials,40101015 - Defense Manufacturing
+rcode,AERODEFDIV,RBICS Codes,Industrials,40101020 - Diversified Aerospace and Defense Manufacturing
+rcode,ELECTREQUIP,RBICS Codes,Industrials,401015 - Electrical Equipment and Power Systems
+rcode,COMMELECTRIC,RBICS Codes,Industrials,40101510 - Commercial and Industrial Electric Products
+rcode,ELECTREQUIPOTHER,RBICS Codes,Industrials,40101515 - Other Electrical Equipment/Power Systems Makers
+rcode,POWERGEN,RBICS Codes,Industrials,40101520 - Power Generation and Support Products
+rcode,MACHINE,RBICS Codes,Industrials,401020 - Machinery Manufacturing
+rcode,CONTROLEQUIP,RBICS Codes,Industrials,"40102010 - Air, Liquid and Gas Control Equipment"
+rcode,AUTOMATIONEQUIP,RBICS Codes,Industrials,40102015 - Factory Automation Equipment
+rcode,MACHINEPARTS,RBICS Codes,Industrials,40102020 - Industrial Machine Parts and Support Equipment
+rcode,CONSTRUCTIONMACHINE,RBICS Codes,Industrials,40102025 - Natural Resource and Construction Machinery Makers
+rcode,MACHINEOTHER,RBICS Codes,Industrials,40102030 - Other Machinery Manufacturing
+rcode,TOOLS,RBICS Codes,Industrials,40102035 - Tools and Outdoor Care Equipment
+rcode,TRANSPORTEQUIP,RBICS Codes,Industrials,401025 - Transportation Equipment Manufacturing
+rcode,TRANSPORTEQUIPCML,RBICS Codes,Industrials,40102510 - Commercial Transportation Equipment Manufacturing
+rcode,TRANSPORTEQUIPGEN,RBICS Codes,Industrials,40102515 - General Transportation Equipment Manufacturing
+rcode,INDSVCE,RBICS Codes,Industrials,4015 - Industrial Services
+rcode,TRAINTRUCK,RBICS Codes,Industrials,401510 - Cargo Transportation and Infrastructure Services
+rcode,AIRWATER,RBICS Codes,Industrials,40151010 - Air and Water Transportation Operators
+rcode,TRAINTRUCKGEN,RBICS Codes,Industrials,40151015 - General Transportation and Related Services
+rcode,TRAINTRUCKOP,RBICS Codes,Industrials,40151020 - Road and Rail Transportation Operators
+rcode,DELIVERY,RBICS Codes,Industrials,401515 - Delivery and Logistics Services
+rcode,EXPRESS,RBICS Codes,Industrials,40151510 - Express Couriers
+rcode,DELIVERYGEN,RBICS Codes,Industrials,40151515 - General Delivery and Logistics Providers
+rcode,LOGISTICS,RBICS Codes,Industrials,40151520 - Logistics and Supply Chain Service Providers
+rcode,INDLDIST,RBICS Codes,Industrials,401520 - Diversified Industrials Distribution
+rcode,EQUIPDISTRIB,RBICS Codes,Industrials,40152010 - Equipment and Supplies Distributors
+rcode,MATDISTRIB,RBICS Codes,Industrials,40152015 - Materials Distributors
+rcode,INDLDIVDISTRIB,RBICS Codes,Industrials,40152020 - Diversified Industrial Distribution
+rcode,BUILDINGMATDIST,RBICS Codes,Industrials,40152025 - Building Materials Distribution\nSince 2019-02-01; see BUILDINGMAT
+rcode,FACIL,RBICS Codes,Industrials,401525 - Facilities and Construction Services
+rcode,PASSENGERTRANS,RBICS Codes,Industrials,401530 - Passenger Transportation
+rcode,AIRPASSENGER,RBICS Codes,Industrials,40153010 - Air Passenger Transportation
+rcode,PASSENGEROTHER,RBICS Codes,Industrials,40153015 - Other Passenger Transportation
+rcode,INTERMODAL,RBICS Codes,Industrials,"40151025 - Intermodal/Multimodal Services\nSince 2022-07-30, previously part of TRAINTRUCKOP"
+rcode,CONTRACTINGSVCE,RBICS Codes,Industrials,40152515 - Specialty Contracting Services\nSince 2024-07-27
+rcode,INFCONSTRSVCE,RBICS Codes,Industrials,40152510 - Infrastructure Construction/Contracting Services
+rcode,COMPMAT,RBICS Codes,Non-Energy Materials,"45202020 - Composite Materials Manufacturing\nSince 2021-08-21, previously part of MATDIV"
+rcode,MININGSTREAMING,RBICS Codes,Non-Energy Materials,45153020 - Streaming and Royalties
+rcode,MATERIALS,RBICS Codes,Non-Energy Materials,45 - Non-Energy Materials
+rcode,CHEM,RBICS Codes,Non-Energy Materials,"4510 - Chemical, Plastic and Rubber Materials"
+rcode,CHEMCOMMOD,RBICS Codes,Non-Energy Materials,451010 - Commodity Chemicals
+rcode,ORGANICCHEM,RBICS Codes,Non-Energy Materials,45101010 - Organic and Petrochemical Products
+rcode,COMMODITYCHEM,RBICS Codes,Non-Energy Materials,45101015 - Other Commodity Chemical Manufacturing
+rcode,CHEMMIX,RBICS Codes,Non-Energy Materials,451015 - Mixed Chemicals
+rcode,CHEMSPECIAL,RBICS Codes,Non-Energy Materials,451020 - Specialty and Performance Chemicals
+rcode,ADDITIVES,RBICS Codes,Non-Energy Materials,45102010 - Additives Manufacturing
+rcode,ADHESIVE,RBICS Codes,Non-Energy Materials,"45102015 - Adhesive, Sealant, Coating and Paint Products"
+rcode,AGROCHEM,RBICS Codes,Non-Energy Materials,45102020 - Agrochemical Products
+rcode,SANITIZE,RBICS Codes,Non-Energy Materials,45102025 - Cleaning and Sanitizing Agent Products
+rcode,CHEMMFROTHER,RBICS Codes,Non-Energy Materials,45102030 - Other Specialty/Performance Chemical Manufacturing
+rcode,POLYMER,RBICS Codes,Non-Energy Materials,45102035 - Specialty/Performance Fibers and Polymer Products
+rcode,PLASTIC,RBICS Codes,Non-Energy Materials,451025 - Plastic and Rubber Products
+rcode,PLASTICOTHER,RBICS Codes,Non-Energy Materials,45102510 - Other Plastic and Rubber Products Manufacturing
+rcode,PLASTICMFR,RBICS Codes,Non-Energy Materials,45102515 - Plastic Products Manufacturing
+rcode,MINING,RBICS Codes,Non-Energy Materials,4515 - Mining and Mineral Products
+rcode,METAL,RBICS Codes,Non-Energy Materials,451510 - Metal Products
+rcode,METALPARTS,RBICS Codes,Non-Energy Materials,45151010 - Metal Parts and Component Manufacturing
+rcode,METALOTHER,RBICS Codes,Non-Energy Materials,45151015 - Other Metal Product Manufacturing
+rcode,METALPRIMARY,RBICS Codes,Non-Energy Materials,45151020 - Primary Metals Products
+rcode,MINERAL,RBICS Codes,Non-Energy Materials,451515 - Minerals
+rcode,MIXMETALMINERAL,RBICS Codes,Non-Energy Materials,451520 - Mixed Metal and Mineral Products
+rcode,ORE,RBICS Codes,Non-Energy Materials,451525 - Metal Ore Mining
+rcode,OREBASE,RBICS Codes,Non-Energy Materials,45152510 - Base Metal Mining
+rcode,OREOTHER,RBICS Codes,Non-Energy Materials,45152515 - Other Metal Ore Mining
+rcode,PRECIOUS,RBICS Codes,Non-Energy Materials,45152520 - Precious Metal Mining
+rcode,MININGOTHER,RBICS Codes,Non-Energy Materials,451530 - Other Mining
+rcode,OREMULTI,RBICS Codes,Non-Energy Materials,45153010 - Multi-Product Mining
+rcode,ORENONMETAL,RBICS Codes,Non-Energy Materials,45153015 - Nonmetallic Mineral Mining
+rcode,MATCONSTR,RBICS Codes,Non-Energy Materials,451535 - Construction Materials
+rcode,ARCHITECTCOMPONENT,RBICS Codes,Non-Energy Materials,45153510 - Architectural and Infrastructure Component Makers
+rcode,MATCONSTRGEN,RBICS Codes,Non-Energy Materials,45153515 - General Construction Materials Manufacturing
+rcode,MATCONSTRHEAVY,RBICS Codes,Non-Energy Materials,45153520 - Heavy Building Material and Aggregate Products
+rcode,MFRPROD,RBICS Codes,Non-Energy Materials,4520 - Manufactured Products
+rcode,WOODPAPER,RBICS Codes,Non-Energy Materials,452010 - Forestry and Paper Products
+rcode,WOOD,RBICS Codes,Non-Energy Materials,45201010 - Construction Wood Products
+rcode,WOODPAPEROTHER,RBICS Codes,Non-Energy Materials,45201015 - Other Forestry and Paper Products Manufacturing
+rcode,PAPER,RBICS Codes,Non-Energy Materials,45201020 - Paper and Paper Products
+rcode,PACKAGING,RBICS Codes,Non-Energy Materials,452015 - Containers and Packaging
+rcode,PACKAGINGMETAL,RBICS Codes,Non-Energy Materials,45201510 - Metal Packaging Products
+rcode,PACKAGINGOTHER,RBICS Codes,Non-Energy Materials,45201515 - Other Containers and Packaging Products
+rcode,PACKAGINGPAPER,RBICS Codes,Non-Energy Materials,45201520 - Paper Packaging Products
+rcode,PACKAGINGPLASTIC,RBICS Codes,Non-Energy Materials,45201525 - Plastic Packaging Products
+rcode,MATOTHER,RBICS Codes,Non-Energy Materials,452020 - Other Materials
+rcode,TEXTILE,RBICS Codes,Non-Energy Materials,45202010 - Textile Products
+rcode,MATDIV,RBICS Codes,Non-Energy Materials,45202015 - Diversified Materials
+rcode,TECH,RBICS Codes,Technology,55 - Technology
+rcode,ELECTRONIC,RBICS Codes,Technology,5510 - Electronic Components and Manufacturing
+rcode,COMPONENTS,RBICS Codes,Technology,551010 - Electronic Components
+rcode,COMPONENTINTERCONNECT,RBICS Codes,Technology,55101010 - Interconnect Electronic Components
+rcode,COMPONENTMODULE,RBICS Codes,Technology,55101015 - Module and Subassembly Components
+rcode,COMPONENTOPTOELECTRONIC,RBICS Codes,Technology,55101020 - Optoelectronics Electronic Components
+rcode,COMPONENTPASSIVE,RBICS Codes,Technology,55101025 - Passive Electronic Components
+rcode,COMPONENTDIV,RBICS Codes,Technology,55101030 - Diversified Electronic Components
+rcode,ELECTRONICEQUIP,RBICS Codes,Technology,551015 - Manufacturing Equipment and Services
+rcode,CONTRACTELECMFR,RBICS Codes,Technology,55101510 - Contract Electronic Manufacturing
+rcode,ELECTRONICEQUIPDIV,RBICS Codes,Technology,55101515 - Diversified Electronic Manufacturing and Services
+rcode,INTERCONNECTMFR,RBICS Codes,Technology,55101520 - Interconnect Fabrication
+rcode,SEMIMFR,RBICS Codes,Technology,551020 - Semiconductor Manufacturing
+rcode,SEMIANALOG,RBICS Codes,Technology,55102010 - Analog and Mixed Signal Semiconductors
+rcode,SEMIDISCRETE,RBICS Codes,Technology,55102015 - Discrete Semiconductors
+rcode,SEMIGEN,RBICS Codes,Technology,55102020 - General Semiconductors
+rcode,SEMIMEMORY,RBICS Codes,Technology,55102025 - Memory Semiconductors
+rcode,SEMIPROCESSOR,RBICS Codes,Technology,55102030 - Processor Semiconductors
+rcode,SEMIASIC,RBICS Codes,Technology,55102035 - Programmable Logic and ASIC Semiconductors
+rcode,SEMISPECIAL,RBICS Codes,Technology,55102040 - Specialized Semiconductors
+rcode,ELECTRONICMFR,RBICS Codes,Technology,551025 - Electronic Equipment Manufacturing
+rcode,SEMIEQUIPSVCE,RBICS Codes,Technology,551030 - Semiconductor Equipment and Services
+rcode,SEMIMFREQUIP,RBICS Codes,Technology,55103010 - Semiconductor Manufacturing Capital Equipment
+rcode,SEMIMFRSVCE,RBICS Codes,Technology,55103015 - Semiconductor Manufacturing Services
+rcode,HW,RBICS Codes,Technology,5515 - Hardware
+rcode,COMMERCIALELECTRONICS,RBICS Codes,Technology,551510 - Commercial Electronics
+rcode,COMMERCEEQUIP,RBICS Codes,Technology,55151010 - Commerce Equipment
+rcode,SECURITYEQUIP,RBICS Codes,Technology,55151015 - Electronic Security Equipment
+rcode,FINELECTRONICS,RBICS Codes,Technology,55151020 - Finance/Banking Industry Electronics Production
+rcode,MEDIAELECTRONICS,RBICS Codes,Technology,55151025 - Media Industry Electronics Manufacturing
+rcode,OFFICEEQUIP,RBICS Codes,Technology,55151030 - Office Equipment Products
+rcode,COMMERCIALELECTRONICSMFR,RBICS Codes,Technology,55151035 - Other Commercial Electronics Manufacturing
+rcode,PRINTINGELECTRONICS,RBICS Codes,Technology,55151040 - Printing/Publishing Industry Electronics Makers
+rcode,MEASURE,RBICS Codes,Technology,55151045 - Test and Measurement Equipment
+rcode,COMMEQUIP,RBICS Codes,Technology,551515 - Communications Equipment
+rcode,BIZCOMM,RBICS Codes,Technology,55151510 - Business Communications Equipment
+rcode,CABLEEQUIP,RBICS Codes,Technology,55151515 - Cable Equipment
+rcode,LANEQUIP,RBICS Codes,Technology,55151520 - Local Area Networking Equipment
+rcode,COMMEQUIPOTHER,RBICS Codes,Technology,55151525 - Other Communications Equipment
+rcode,SATELLITEEQUIP,RBICS Codes,Technology,55151530 - Satellite Equipment
+rcode,WANEQUIP,RBICS Codes,Technology,55151535 - Wide Area Networking Equipment
+rcode,WIRELESSINFEQUIP,RBICS Codes,Technology,55151540 - Wireless Core Infrastructure Equipment
+rcode,WIRELESSMOBILEEQUIP,RBICS Codes,Technology,55151545 - Wireless Mobile Equipment
+rcode,COMPUTER,RBICS Codes,Technology,551520 - Computer Hardware and Storage
+rcode,PERIPHERALS,RBICS Codes,Technology,55152010 - Computer Peripherals
+rcode,COMPUTERSYSTEMS,RBICS Codes,Technology,55152015 - Computer Systems
+rcode,DATASTORAGEHW,RBICS Codes,Technology,55152020 - Data Storage Hardware
+rcode,COMPUTERGEN,RBICS Codes,Technology,55152025 - General Computer Hardware
+rcode,HWCOMPONENTS,RBICS Codes,Technology,55152030 - Hardware Components
+rcode,CONSUMERELECTRONICS,RBICS Codes,Technology,551525 - Consumer Electronics
+rcode,AUDIOMFR,RBICS Codes,Technology,55152510 - Audio Electronics Manufacturing
+rcode,AUTOELECTRONICSMFR,RBICS Codes,Technology,55152515 - Automotive and Marine Electronics Manufacturing
+rcode,CONSUMERELECTRONICSACCESS,RBICS Codes,Technology,55152520 - Consumer Electronics Accessories Manufacturing
+rcode,VIDEOEQUIP,RBICS Codes,Technology,55152525 - Consumer Video Electronics Equipment
+rcode,GAMING,RBICS Codes,Technology,55152530 - Electronic Gaming/Entertainment Electronics Makers
+rcode,CONSUMERELECTRONICSGEN,RBICS Codes,Technology,55152535 - General Consumer Electronics Manufacturing
+rcode,PHOTO,RBICS Codes,Technology,55152540 - Photography Equipment
+rcode,VIRTUALREALITY,RBICS Codes,Technology,55152545 - Virtual Reality Equipment\nSince 2018-02-02
+rcode,WEARABLETECH,RBICS Codes,Technology,55152550 - Wearable Technology\nSince 2018-02-02
+rcode,TECHDISTRIB,RBICS Codes,Technology,551530 - Information Technology Distribution
+rcode,HWDISTRIB,RBICS Codes,Technology,55153010 - IT Hardware Distributors
+rcode,TECHDISTRIBOTHER,RBICS Codes,Technology,55153015 - Other IT Distributors
+rcode,SOFTWDISTRIB.XX1,RBICS Codes,Technology,"55153020 - Software Distributors\nDiscontinued 2022-07-30, replaced by SOFTWDISTRIB"
+rcode,SOFTWTECH,RBICS Codes,Technology,5520 - Software and Consulting
+rcode,INTERNET,RBICS Codes,Technology,552010 - Internet and Data Services
+rcode,CONSUMERDATA,RBICS Codes,Technology,55201010 - Consumer Data and Services
+rcode,INTERNETMEDIA,RBICS Codes,Technology,55201015 - Diversified Electronic Media Services
+rcode,INTERNETHOSTING,RBICS Codes,Technology,55201020 - Internet Hosting Services
+rcode,TECHSUPPORT,RBICS Codes,Technology,55201025 - Internet Support Services
+rcode,PRODATA,RBICS Codes,Technology,55201030 - Professional Data and Services
+rcode,WEBDATA,RBICS Codes,Technology,55201035 - Web-Based Data and Services
+rcode,SOFTW,RBICS Codes,Technology,552015 - Software
+rcode,SOFTWDESIGN,RBICS Codes,Technology,55201510 - Design and Engineering Software
+rcode,SOFTWENTERPRISE,RBICS Codes,Technology,55201515 - Enterprise Management Software
+rcode,SOFTWGAMES,RBICS Codes,Technology,55201520 - Games Software
+rcode,SOFTWHOMEOFFICE,RBICS Codes,Technology,55201525 - Home and Office Software
+rcode,SOFTWINDSPECIFIC,RBICS Codes,Technology,55201530 - Industry-Specific Software
+rcode,SOFTWINF,RBICS Codes,Technology,55201535 - IT Infrastructure Software
+rcode,SOFTWGEN,RBICS Codes,Technology,55201540 - General and Mixed-Type Software
+rcode,TECHCONSULTSVCE,RBICS Codes,Technology,552020 - Technology Consulting Services
+rcode,TECHCONSULTGEN,RBICS Codes,Technology,55202010 - General Enterprise and Technology Consulting
+rcode,TECHINDSPECIFIC,RBICS Codes,Technology,55202015 - Industry-Specific IT Services
+rcode,TECHCONSULT,RBICS Codes,Technology,55202020 - Information Technology Consulting
+rcode,TECHCONSULTNETW,RBICS Codes,Technology,55202025 - Infrastructure and Network Consulting Services
+rcode,SOFTWDISTRIB,RBICS Codes,Technology,"552025 - Software Distribution\nSince 2022-07-30, previously SOFTWDISTRIB.XX1"
+rcode,TELECOMAMEREXUS,RBICS Codes,Telecommunications,"60101050 - Pan-Americas Mixed Telecommunications Services\nSince 2021-08-21, previously part of TELECOMINTL, WIRELESS, and WIRELINE"
+rcode,TELECOMASIA,RBICS Codes,Telecommunications,"60101055 - Pan-Asia/Pacific Mixed Telecommunications Services\nSince 2021-08-21, previously part of TELECOMINTL, WIRELESS, and WIRELINE"
+rcode,TELECOMEUROPE,RBICS Codes,Telecommunications,"60101060 - Pan-Europe Mixed Telecommunications Services\nSince 2021-08-21, previously part of TELECOMINTL, WIRELESS, and WIRELINE"
+rcode,TELECOMMIDEAST,RBICS Codes,Telecommunications,"60101065 - Middle East and Africa Mixed Telecom Services\nSince 2021-08-21, previously part of TELECOMINTL, WIRELESS, and WIRELINE"
+rcode,TELECOMSS,RBICS Codes,Telecommunications,6010 - Telecommunications
+rcode,TELECOMGEN,RBICS Codes,Telecommunications,601010 - General Telecommunications Services
+rcode,TELECOM,RBICS Codes,Telecommunications,60 - Telecommunications
+rcode,TELECOMOTHER,RBICS Codes,Telecommunications,601010 - General Telecommunications Services
+rcode,TELECOMINTL,RBICS Codes,Telecommunications,60101010 - Mixed International Telecommunications Services
+rcode,SATELLITESVCE,RBICS Codes,Telecommunications,60101015 - Diversified Satellite Services
+rcode,SATELLITEINTL,RBICS Codes,Telecommunications,60101020 - International Satellite Services
+rcode,TELECOMUSOTHER,RBICS Codes,Telecommunications,60101025 - Other United States Telecommunications Services
+rcode,TELECOMCARRIER,RBICS Codes,Telecommunications,60101030 - Telecommunications Carrier Services
+rcode,TELECOMSOFTW,RBICS Codes,Telecommunications,60101035 - Telecommunications Industry Software
+rcode,TELECOMSOFTWSVCE,RBICS Codes,Telecommunications,60101040 - Telecommunications Industry Software and Services
+rcode,SATELLITEUS,RBICS Codes,Telecommunications,60101045 - United States Satellite Services
+rcode,TELECOMWIRE,RBICS Codes,Telecommunications,601015 - Wireless and Wireline Telecommunications Services
+rcode,WIRELESS,RBICS Codes,Telecommunications,60101510 - Wireless Services
+rcode,WIRELINE,RBICS Codes,Telecommunications,60101515 - Wireline Services
+rcode,UTIL,RBICS Codes,Utilities,65 - Utilities
+rcode,ENERGYUTIL,RBICS Codes,Utilities,651010 - Energy Utilities
+rcode,UTILELEC,RBICS Codes,Utilities,65101010 - Electric Utilities
+rcode,GAS,RBICS Codes,Utilities,65101015 - Natural Gas Utilities
+rcode,UTILELECGAS,RBICS Codes,Utilities,65101020 - Other Electric and Natural Gas Utilities
+rcode,POWER.XX1,RBICS Codes,Utilities,"65101025 - Wholesale Power Generation and Marketing\nDiscontinued 2018-02-02, replaced by POWERMULTINAT, POWERUS, POWERAMEREXUS, POWERASIA, and POWERINTLOTHER"
+rcode,POWERMULTINAT,RBICS Codes,Utilities,"65101030 - Multinational Wholesale Power\nSince 2018-02-02, previously part of POWER.XX1"
+rcode,POWERUS,RBICS Codes,Utilities,"65101035 - United States Wholesale Power\nSince 2018-02-02, previously part of POWER.XX1"
+rcode,POWERAMEREXUS,RBICS Codes,Utilities,"65101040 - Americas Wholesale Power\nSince 2018-02-02, previously part of POWER.XX1"
+rcode,POWERASIA,RBICS Codes,Utilities,"65101045 - Asia/Pacific Wholesale Power\nSince 2018-02-02, previously part of POWER.XX1"
+rcode,POWERINTLOTHER,RBICS Codes,Utilities,"65101050 - Other International Wholesale Power\nSince 2018-02-02, previously part of POWER.XX1"
+rcode,WATER,RBICS Codes,Utilities,651015 - Water Utilities
+rcode,WATERINTL,RBICS Codes,Utilities,65101510 - International Water Utilities
+rcode,WATERUS,RBICS Codes,Utilities,65101515 - United States Water Utilities
+rcode,WATERMULTINAT,RBICS Codes,Utilities,65101520 - Multi-National Water Utilities
+rcode,UTILSS,RBICS Codes,Utilities,6510 - Utilities
+rcode,XMSNUS,RBICS Codes,Utilities,"65101055 - United States Transmission, Distribution, and Storage\nSince 2021-08-21, previously part of FACIL"
+rcode,XMSNMULTINAT,RBICS Codes,Utilities,"65101060 - Multinational Transmission, Distribution, and Storage\nSince 2021-08-21, previously part of FACIL, UTILELEC, POWERAMEREXUS, POWERASIA, and POWERINTLOTHER"
+series,$SPALL,Time Series IDs,Index Tickers - Major,S&P 1500 Super Composite
+series,$MID,Time Series IDs,Index Tickers - Major,S&P 400 Mid
+series,$RUA,Time Series IDs,Index Tickers - Major,Russell3000
+series,$RUI,Time Series IDs,Index Tickers - Major,Russell1000
+series,$RUT,Time Series IDs,Index Tickers - Major,Russell2000
+series,$SML,Time Series IDs,Index Tickers - Major,S&P 600 Small
+series,$SP500,Time Series IDs,Index Tickers - Major,S&P 500
+series,$SP500EQ,Time Series IDs,Index Tickers - Major,S&P 500 EQUAL WEIGHT
+series,$SP500PG,Time Series IDs,Index Tickers - Specialty,S&P 500 Pure Growth
+series,$SP500PV,Time Series IDs,Index Tickers - Specialty,S&P 500 Pure Value
+series,$SMLPG,Time Series IDs,Index Tickers - Specialty,S&P 600 Pure Growth
+series,$SMLPV,Time Series IDs,Index Tickers - Specialty,S&P 600 Pure Value
+series,$MIDPG,Time Series IDs,Index Tickers - Specialty,S&P 400 Pure Growth
+series,$MIDPV,Time Series IDs,Index Tickers - Specialty,S&P 400 Pure Value
+series,$NASDAQ,Time Series IDs,Index Tickers - Specialty,Nasdaq
+series,$NASDAQ100,Time Series IDs,Index Tickers - Specialty,Nasdaq 100
+series,$DJIA,Time Series IDs,Index Tickers - Specialty,Dow Jones
+series,$SPALLCND,Time Series IDs,Index Tickers - Specialty,SP1500 Consumer Discretion
+series,$SPALLCNS,Time Series IDs,Index Tickers - Specialty,SP1500 Consumer Staples
+series,$SPALLENG,Time Series IDs,Index Tickers - Specialty,SP1500 Energy
+series,$SPALLEUT,Time Series IDs,Index Tickers - Specialty,SP1500 Elec Utilities
+series,$SPALLFIN,Time Series IDs,Index Tickers - Specialty,SP1500 Financials
+series,$SPALLGLD,Time Series IDs,Index Tickers - Specialty,SP1500 Gold
+series,$SPALLHEA,Time Series IDs,Index Tickers - Specialty,SP1500 Health Care
+series,$SPALLHEQ,Time Series IDs,Index Tickers - Specialty,SP1500 Hlth Care Eq&Srvc
+series,$SPALLIND,Time Series IDs,Index Tickers - Specialty,SP1500 Industrials
+series,$SPALLINT,Time Series IDs,Index Tickers - Specialty,SP1500 Information Tech
+series,$SPALLMAT,Time Series IDs,Index Tickers - Specialty,SP1500 Materials
+series,$SPALLPBL,Time Series IDs,Index Tickers - Specialty,SP1500 Pharma Biotech Life
+series,$SPALLPG,Time Series IDs,Index Tickers - Specialty,S&P 1500 Pure Growth
+series,$SPALLPV,Time Series IDs,Index Tickers - Specialty,S&P 1500 Pure Value
+series,$SPALLTCM,Time Series IDs,Index Tickers - Specialty,SP1500 Telecom Services
+series,$SPALLUTL,Time Series IDs,Index Tickers - Specialty,SP1500 Utilities
+series,$VIX,Time Series IDs,Index Tickers - Specialty,CBOE Volatility Index
+series,#TNX,Time Series IDs,Misc IDs,10Y Treasury Note coupon payment on $1000 bond (updated daily).  To get the yield divide by 10. Ex. $25 payment on a $1000 bond represents 2.5% yield.
+series,#Bench,Time Series IDs,Misc IDs,Current benchmark closing prices (daily)
+series,#Equity,Time Series IDs,Misc IDs,The Portfolio/Sim total value (daily)
+series,#High,Time Series IDs,Price IDs,Stock high prices (daily)
+series,#Close,Time Series IDs,Price IDs,Stock closing prices (daily)
+series,#Low,Time Series IDs,Price IDs,Stock low prices (daily)
+series,#Open,Time Series IDs,Price IDs,Stock opening prices (daily)
+series,#SPRPBlend,Time Series IDs,S&P 500 IDs,SP500 Risk Premium (weekly)
+series,#SPYieldBlend,Time Series IDs,S&P 500 IDs,SP500 Yield (weekly) based on the time weighted analysts estimates of CurrY and NextY
+series,#SPEPSCNY,Time Series IDs,S&P 500 IDs,SP500 EPS Blend Y (weekly)  based on the time weighted analysts estimates of CurrY and NextY
+series,#SPEPSQ,Time Series IDs,S&P 500 IDs,SP500 EPS Blend Q (weekly)
+series,#SPEPSTTM,Time Series IDs,S&P 500 IDs,SP500 EPS Trailing 12 months (weekly)
