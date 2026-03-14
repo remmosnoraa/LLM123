@@ -1,0 +1,104 @@
+<RankingSystem RankType="Higher">
+	<Composite Name="Company EPS Growth" Weight="25" RankType="Higher">
+		<StockFactor Weight="5" RankType="Higher" Scope="Universe">
+			<Factor>EPSExclXorGr%3Y</Factor>
+		</StockFactor>
+		<StockFactor Weight="15" RankType="Higher" Scope="Universe">
+			<Factor>EPSExclXorGr%TTM</Factor>
+		</StockFactor>
+		<StockFactor Weight="20" RankType="Higher" Scope="Universe">
+			<Factor>EPSExclXorGr%PYQ</Factor>
+		</StockFactor>
+		<StockFormula Weight="20" RankType="Higher" Name="Rel EPS Gr PYQ" Description="" Scope="Industry">
+			<Formula>EPSExclXorGr%PYQ</Formula>
+		</StockFormula>
+		<StockFormula Weight="15" RankType="Higher" Name="Rel EPS Gr TTM" Description="" Scope="Industry">
+			<Formula>EPSExclXorGr%TTM</Formula>
+		</StockFormula>
+		<StockFormula Weight="5" RankType="Higher" Name="Rel EPS Gr 3Yr" Description="" Scope="Industry">
+			<Formula>EPSExclXorGr%3Y</Formula>
+		</StockFormula>
+		<StockFormula Weight="10" RankType="Higher" Name="EPS Accel short term" Description="" Scope="Universe">
+			<Formula>(EPSExclXorGr%PYQ- EPSExclXorGr%TTM)/abs( EPSExclXorGr%TTM)</Formula>
+		</StockFormula>
+		<StockFormula Weight="10" RankType="Higher" Name="EPS Accel long term" Description="" Scope="Universe">
+			<Formula>(EPSExclXorGr%TTM/EPSExclXorGr%3Y)/abs(EPSExclXorGr%3Y)</Formula>
+		</StockFormula>
+	</Composite>
+	<Composite Name="Company Sales Growth" Weight="20" RankType="Higher">
+		<StockFactor Weight="5" RankType="Higher" Scope="Universe">
+			<Factor>Sales3YCGr%</Factor>
+		</StockFactor>
+		<StockFactor Weight="20" RankType="Higher" Scope="Universe">
+			<Factor>SalesGr%TTM</Factor>
+		</StockFactor>
+		<StockFactor Weight="25" RankType="Higher" Scope="Universe">
+			<Factor>SalesGr%PYQ</Factor>
+		</StockFactor>
+		<StockFormula Weight="25" RankType="Higher" Name="Rel Sales Gr PYQ" Description="" Scope="Industry">
+			<Formula>SalesGr%PYQ</Formula>
+		</StockFormula>
+		<StockFormula Weight="20" RankType="Higher" Name="Rel Sales Gr TTM" Description="" Scope="Industry">
+			<Formula>SalesGr%TTM</Formula>
+		</StockFormula>
+		<StockFormula Weight="5" RankType="Higher" Name="Rel Sales Gr 3 Yr" Description="" Scope="Industry">
+			<Formula>Sales3YCGr%</Formula>
+		</StockFormula>
+	</Composite>
+	<Composite Name="Industry EPS Growth" Weight="25" RankType="Higher">
+		<IndFactor Weight="10" RankType="Higher">
+			<Factor>EPSExclXorGr%3YInd</Factor>
+		</IndFactor>
+		<IndFactor Weight="40" RankType="Higher">
+			<Factor>EPSExclXorGr%TTMInd</Factor>
+		</IndFactor>
+		<IndFactor Weight="50" RankType="Higher">
+			<Factor>EPSExclXorGr%PYQInd</Factor>
+		</IndFactor>
+	</Composite>
+	<Composite Name="Market " Weight="15" RankType="Higher">
+		<StockFormula Weight="33.33" RankType="Higher" Name="Price to 52-week high" Description="" Scope="Universe">
+			<Formula>Price/ PriceH</Formula>
+		</StockFormula>
+		<StockFactor Weight="33.33" RankType="Higher" Scope="Universe">
+			<Factor>InstNetPurch</Factor>
+		</StockFactor>
+		<StockFormula Weight="33.33" RankType="Higher" Name="ema(20)/ema(120)" Description="" Scope="Universe">
+			<Formula>ema(20)/ema(120)</Formula>
+		</StockFormula>
+	</Composite>
+	<Composite Name="Company Quality" Weight="10" RankType="Higher">
+		<StockFactor Weight="12.5" RankType="Higher" Scope="Universe">
+			<Factor>OpMgn%TTM</Factor>
+		</StockFactor>
+		<StockFactor Weight="12.5" RankType="Higher" Scope="Universe">
+			<Factor>OpMgn%5Y</Factor>
+		</StockFactor>
+		<StockFactor Weight="12.5" RankType="Higher" Scope="Industry">
+			<Factor>OpMgn%TTM</Factor>
+		</StockFactor>
+		<StockFactor Weight="12.5" RankType="Higher" Scope="Industry">
+			<Factor>OpMgn%5Y</Factor>
+		</StockFactor>
+		<StockFactor Weight="12.5" RankType="Higher" Scope="Universe">
+			<Factor>ROI%TTM</Factor>
+		</StockFactor>
+		<StockFactor Weight="12.5" RankType="Higher" Scope="Universe">
+			<Factor>ROI%5YAvg</Factor>
+		</StockFactor>
+		<StockFactor Weight="12.5" RankType="Higher" Scope="Industry">
+			<Factor>ROI%TTM</Factor>
+		</StockFactor>
+		<StockFactor Weight="12.5" RankType="Higher" Scope="Industry">
+			<Factor>ROI%5YAvg</Factor>
+		</StockFactor>
+	</Composite>
+	<Composite Name="Stability" Weight="5" RankType="Higher">
+		<StockFormula Weight="50" RankType="Lower" Name="EPS Stability" Description="" Scope="Universe">
+			<Formula>EPSStableQ</Formula>
+		</StockFormula>
+		<StockFormula Weight="50" RankType="Lower" Name="Non recurr" Description="" Scope="Universe">
+			<Formula>abs(SpcItems(0,TTM)/Sales(0,TTM))</Formula>
+		</StockFormula>
+	</Composite>
+</RankingSystem>
