@@ -1,0 +1,1325 @@
+<RankingSystem RankType="Higher">
+	<Composite Name="CROIC/OpMgn" Weight="12" RankType="Higher">
+		<Composite Name="vs. Univ" Weight="8" RankType="Higher">
+			<StockFormula Weight="3" RankType="Higher" Name="$croicTTM" Description="" Scope="Universe">
+				<Formula>$croicTTM</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="$croic3Yavg" Description="" Scope="Universe">
+				<Formula>$croic3Yavg</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="OpMgn%TTM" Description="" Scope="Universe">
+				<Formula>OpMgn%TTM</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="OpMgn%3YAvg" Description="" Scope="Universe">
+				<Formula>OpMgn%3YAvg</Formula>
+			</StockFormula>
+		</Composite>
+		<Composite Name="vs. Subsector" Weight="3" RankType="Higher">
+			<StockFormula Weight="3" RankType="Higher" Name="$croicTTM" Description="" Scope="Sub-Sector">
+				<Formula>$croicTTM</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="$croic3Yavg" Description="" Scope="Sub-Sector">
+				<Formula>$croic3Yavg</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="OpMgn%TTM" Description="" Scope="Sub-Sector">
+				<Formula>OpMgn%TTM</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="OpMgn%3YAvg" Description="" Scope="Sub-Sector">
+				<Formula>OpMgn%3YAvg</Formula>
+			</StockFormula>
+		</Composite>
+		<Composite Name="vs. industry " Weight="3" RankType="Higher">
+			<StockFormula Weight="3" RankType="Higher" Name="$croicTTM" Description="" Scope="Industry">
+				<Formula>$croicTTM</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="$croic3Yavg" Description="" Scope="Industry">
+				<Formula>$croic3Yavg</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="OpMgn%TTM" Description="" Scope="Industry">
+				<Formula>OpMgn%TTM</Formula>
+			</StockFormula>
+			<StockFormula Weight="3" RankType="Higher" Name="OpMgn%3YAvg" Description="" Scope="Industry">
+				<Formula>OpMgn%3YAvg</Formula>
+			</StockFormula>
+		</Composite>
+	</Composite>
+	<Composite Name="Growth+Margins+Quality" Weight="60" RankType="Higher">
+		<Composite Name="Margin" Weight="22" RankType="Higher">
+			<Composite Name="Gross vs. Universe " Weight="15" RankType="Higher">
+				<StockFactor Weight="1" RankType="Higher" Scope="Universe">
+					<Factor>GMgn%Q</Factor>
+				</StockFactor>
+				<StockFactor Weight="1" RankType="Higher" Scope="Universe">
+					<Factor>GMgn%TTM</Factor>
+				</StockFactor>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn%3YAvg" Description="" Scope="Universe">
+					<Formula>GMgn%3YAvg</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn%5YAvg" Description="" Scope="Universe">
+					<Formula> GMgn%5YAvg</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn Ratio Q/TTM" Description="" Scope="Universe">
+					<Formula>GMgn%Q/GMgn%TTM</Formula>
+				</StockFormula>
+				<StockFactor Weight="1" RankType="Higher" Scope="Universe">
+					<Factor>GMgn%Gr%3Y</Factor>
+				</StockFactor>
+			</Composite>
+			<Composite Name="Gross vs. Subsector" Weight="3" RankType="Higher">
+				<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+					<Factor>GMgn%Q</Factor>
+				</StockFactor>
+				<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+					<Factor>GMgn%TTM</Factor>
+				</StockFactor>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn%3YAvg" Description="" Scope="Sub-Sector">
+					<Formula>GMgn%3YAvg</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn%5YAvg" Description="" Scope="Sub-Sector">
+					<Formula>GMgn%5YAvg</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn Ratio Q/TTM" Description="" Scope="Sub-Sector">
+					<Formula>GMgn%Q/GMgn%TTM</Formula>
+				</StockFormula>
+				<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+					<Factor>GMgn%Gr%3Y</Factor>
+				</StockFactor>
+			</Composite>
+			<Composite Name="Gross vs. Industry " Weight="3" RankType="Higher">
+				<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+					<Factor>GMgn%Q</Factor>
+				</StockFactor>
+				<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+					<Factor>GMgn%TTM</Factor>
+				</StockFactor>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn%3YAvg" Description="" Scope="Industry">
+					<Formula>GMgn%3YAvg</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn%5YAvg" Description="" Scope="Industry">
+					<Formula>GMgn%5YAvg</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="GMgn Ratio Q/TTM" Description="" Scope="Industry">
+					<Formula>GMgn%Q/GMgn%TTM</Formula>
+				</StockFormula>
+				<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+					<Factor>GMgn%Gr%3Y</Factor>
+				</StockFactor>
+			</Composite>
+			<Composite Name="Other" Weight="2" RankType="Higher">
+				<StockFactor Weight="4" RankType="Higher" Scope="Universe">
+					<Factor>NPMgn%TTM</Factor>
+				</StockFactor>
+				<StockFormula Weight="4" RankType="Higher" Name="Operating CF Margin" Description="" Scope="Universe">
+					<Formula>EBITDATTM / SalesTTM</Formula>
+				</StockFormula>
+				<StockFormula Weight="4" RankType="Higher" Name="Free CF Margin" Description="" Scope="Universe">
+					<Formula>NetFCFTTM / SalesTTM</Formula>
+				</StockFormula>
+				<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+					<Factor>NPMgn%TTM</Factor>
+				</StockFactor>
+				<StockFormula Weight="1" RankType="Higher" Name="Operating CF Margin" Description="" Scope="Sub-Sector">
+					<Formula>EBITDATTM / SalesTTM</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="Free CF Margin" Description="" Scope="Sub-Sector">
+					<Formula>NetFCFTTM / SalesTTM</Formula>
+				</StockFormula>
+				<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+					<Factor>NPMgn%TTM</Factor>
+				</StockFactor>
+				<StockFormula Weight="1" RankType="Higher" Name="Operating CF Margin" Description="" Scope="Industry">
+					<Formula>EBITDATTM / SalesTTM</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="Free CF Margin" Description="" Scope="Industry">
+					<Formula>NetFCFTTM / SalesTTM</Formula>
+				</StockFormula>
+			</Composite>
+		</Composite>
+		<Composite Name="Growth" Weight="22" RankType="Higher">
+			<Composite Name="Sales" Weight="4" RankType="Higher">
+				<Composite Name="vs. Universe " Weight="6" RankType="Higher">
+					<StockFormula Weight="12.5" RankType="Higher" Name=" SalesGr%PYQ" Description="" Scope="Universe">
+						<Formula> SalesGr%PYQ</Formula>
+					</StockFormula>
+					<StockFactor Weight="12.5" RankType="Higher" Scope="Universe">
+						<Factor>SalesGr%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="12.5" RankType="Higher" Name="SalesGr% TTM/T3YAvg" Description="" Scope="Universe">
+						<Formula>%(SalesGr%TTM, FHistAvg("SalesGr%TTM", 39, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="12.5" RankType="Higher" Name="SalesGr%5Y" Description="" Scope="Universe">
+						<Formula>FHistAvg("SalesGr%TTM", 65, 4)</Formula>
+					</StockFormula>
+					<StockFormula Weight="12.5" RankType="Higher" Name="FCF/S 3Y" Description="" Scope="Universe">
+						<Formula>FHistAvg("FCFTTM/SalesTTM",39,4)</Formula>
+					</StockFormula>
+					<StockFormula Weight="12.5" RankType="Higher" Name="Qtrs of Sales Growth vs. PYQ" Description="" Scope="Universe">
+						<Formula>LoopSum("Sales(Ctr,Qtr) > Sales(Ctr+4,Qtr)", 6, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="12.5" RankType="Higher" Name="Years of Sales Growth vs. PTM" Description="" Scope="Universe">
+						<Formula>LoopSum("Sales(Ctr,TTM) > Sales(Ctr+4,TTM)", 4, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="12.5" RankType="Higher" Name="Pr4Q Sales Accel TTM vs. PQTTM" Description="" Scope="Universe">
+						<Formula>%(LoopSum("Sales(Ctr, TTM)", 4), LoopSum("Sales(Ctr+1, TTM)", 4))</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. Subsector" Weight="1" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name=" SalesGr%PYQ" Description="" Scope="Sub-Sector">
+						<Formula>SalesGr%PYQ</Formula>
+					</StockFormula>
+					<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+						<Factor>SalesGr%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="SalesGr% TTM/T3YAvg" Description="" Scope="Sub-Sector">
+						<Formula>%(SalesGr%TTM, FHistAvg("SalesGr%TTM", 39, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="SalesGr%5Y" Description="" Scope="Sub-Sector">
+						<Formula>FHistAvg("SalesGr%TTM", 65, 4)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="FCF/S 3Y" Description="" Scope="Sub-Sector">
+						<Formula>FHistAvg("FCFTTM/SalesTTM",39,4)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Qtrs of Sales Growth vs. PYQ" Description="" Scope="Sub-Sector">
+						<Formula>LoopSum("Sales(Ctr,Qtr) > Sales(Ctr+4,Qtr)", 6, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Years of Sales Growth vs. PTM" Description="" Scope="Sub-Sector">
+						<Formula>LoopSum("Sales(Ctr,TTM) > Sales(Ctr+4,TTM)", 4, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Pr4Q Sales Accel TTM vs. PQTTM" Description="" Scope="Sub-Sector">
+						<Formula>%(LoopSum("Sales(Ctr, TTM)", 4), LoopSum("Sales(Ctr+1, TTM)", 4))</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. Industry " Weight="1" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name=" SalesGr%PYQ" Description="" Scope="Industry">
+						<Formula>SalesGr%PYQ</Formula>
+					</StockFormula>
+					<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+						<Factor>SalesGr%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="SalesGr% TTM/T3YAvg" Description="" Scope="Industry">
+						<Formula>%(SalesGr%TTM, FHistAvg("SalesGr%TTM", 39, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="SalesGr%5Y" Description="" Scope="Industry">
+						<Formula>FHistAvg("SalesGr%TTM", 65, 4)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="FCF/S 3Y" Description="" Scope="Industry">
+						<Formula>FHistAvg("FCFTTM/SalesTTM",39,4)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Qtrs of Sales Growth vs. PYQ" Description="" Scope="Industry">
+						<Formula>LoopSum("Sales(Ctr,Qtr) > Sales(Ctr+4,Qtr)", 6, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Years of Sales Growth vs. PTM" Description="" Scope="Industry">
+						<Formula>LoopSum("Sales(Ctr,TTM) > Sales(Ctr+4,TTM)", 4, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Pr4Q Sales Accel TTM vs. PQTTM" Description="" Scope="Industry">
+						<Formula>%(LoopSum("Sales(Ctr, TTM)", 4), LoopSum("Sales(Ctr+1, TTM)", 4))</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="Projected Growth" Weight="2" RankType="Higher">
+					<Composite Name="vs. Universe" Weight="4" RankType="Higher">
+						<StockFormula Weight="28" RankType="Higher" Name="Current Q" Description="" Scope="Universe">
+							<Formula> $EstSALESgroCQ</Formula>
+						</StockFormula>
+						<StockFormula Weight="22" RankType="Higher" Name="1Q Fwd Growth" Description="" Scope="Universe">
+							<Formula>$EstSALESgro1Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="14" RankType="Higher" Name="2Q Fwd Growth" Description="" Scope="Universe">
+							<Formula>$EstSALESgro2Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="4" RankType="Higher" Name="3Q Fwd Growth" Description="" Scope="Universe">
+							<Formula>$EstSALESgro3Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="16" RankType="Higher" Name="Est. Sales Growth NY" Description="" Scope="Universe">
+							<Formula> $EstSalesGrNY</Formula>
+						</StockFormula>
+						<StockFormula Weight="16" RankType="Higher" Name="Est. Sales Growth NTM" Description="" Scope="Universe">
+							<Formula>%(ConsEstMean(#SALENTM, 0), SalesActualTTM)</Formula>
+						</StockFormula>
+					</Composite>
+					<Composite Name="vs. Industry" Weight="1" RankType="Higher">
+						<StockFormula Weight="28" RankType="Higher" Name="Current Q" Description="" Scope="Industry">
+							<Formula>$EstSALESgroCQ</Formula>
+						</StockFormula>
+						<StockFormula Weight="22" RankType="Higher" Name="1Q Fwd Growth" Description="" Scope="Industry">
+							<Formula>$EstSALESgro1Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="14" RankType="Higher" Name="2Q Fwd Growth" Description="" Scope="Industry">
+							<Formula>$EstSALESgro2Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="4" RankType="Higher" Name="3Q Fwd Growth" Description="" Scope="Industry">
+							<Formula>$EstSALESgro3Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="16" RankType="Higher" Name="Est. Sales Growth NY" Description="" Scope="Industry">
+							<Formula>$EstSalesGrNY</Formula>
+						</StockFormula>
+						<StockFormula Weight="16" RankType="Higher" Name="Est. Sales Growth NTM" Description="" Scope="Industry">
+							<Formula>%(ConsEstMean(#SALENTM, 0), SalesActualTTM)</Formula>
+						</StockFormula>
+					</Composite>
+					<Composite Name="vs. Subsector" Weight="1" RankType="Higher">
+						<StockFormula Weight="28" RankType="Higher" Name="Current Q" Description="" Scope="Sub-Sector">
+							<Formula>$EstSALESgroCQ</Formula>
+						</StockFormula>
+						<StockFormula Weight="22" RankType="Higher" Name="1Q Fwd Growth" Description="" Scope="Sub-Sector">
+							<Formula>$EstSALESgro1Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="14" RankType="Higher" Name="2Q Fwd Growth" Description="" Scope="Sub-Sector">
+							<Formula>$EstSALESgro2Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="4" RankType="Higher" Name="3Q Fwd Growth" Description="" Scope="Sub-Sector">
+							<Formula>$EstSALESgro3Q</Formula>
+						</StockFormula>
+						<StockFormula Weight="16" RankType="Higher" Name="Est. Sales Growth NY" Description="" Scope="Sub-Sector">
+							<Formula>$EstSalesGrNY</Formula>
+						</StockFormula>
+						<StockFormula Weight="16" RankType="Higher" Name="Est. Sales Growth NTM" Description="" Scope="Sub-Sector">
+							<Formula>%(ConsEstMean(#SALENTM, 0), SalesActualTTM)</Formula>
+						</StockFormula>
+					</Composite>
+				</Composite>
+			</Composite>
+			<Composite Name="EBITDA Growth" Weight="2" RankType="Higher">
+				<Composite Name="EBITDA Growth vs. Univ" Weight="5" RankType="Higher">
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%PQ" Description="" Scope="Universe">
+						<Formula>EBITDAGr%PQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name=" EBITDAGr%PYQ" Description="" Scope="Universe">
+						<Formula> EBITDAGr%PYQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%TTM" Description="" Scope="Universe">
+						<Formula>EBITDAGr%TTM</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%3Y" Description="" Scope="Universe">
+						<Formula>EBITDAGr%3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr TTM/3Y" Description="" Scope="Universe">
+						<Formula>EBITDAGr%TTM/EBITDAGr%3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name=" EBITDAGr%5Y" Description="" Scope="Universe">
+						<Formula> EBITDAGr%5Y</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="EBITDA Growth vs. Subsector " Weight="1" RankType="Higher">
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%PQ" Description="" Scope="Sub-Sector">
+						<Formula>EBITDAGr%PQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name=" EBITDAGr%PYQ" Description="" Scope="Sub-Sector">
+						<Formula>EBITDAGr%PYQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%TTM" Description="" Scope="Sub-Sector">
+						<Formula>EBITDAGr%TTM</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%3Y" Description="" Scope="Sub-Sector">
+						<Formula>EBITDAGr%3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAPSGr TTM/3Y" Description="" Scope="Sub-Sector">
+						<Formula>EBITDAGr%TTM/EBITDAGr%3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name=" EBITDAGr%5Y" Description="" Scope="Sub-Sector">
+						<Formula>EBITDAGr%5Y</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="EBITDA Growth vs. Industry" Weight="1" RankType="Higher">
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%PQ" Description="" Scope="Industry">
+						<Formula>EBITDAGr%PQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name=" EBITDAGr%PYQ" Description="" Scope="Industry">
+						<Formula>EBITDAGr%PYQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%TTM" Description="" Scope="Industry">
+						<Formula>EBITDAGr%TTM</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAGr%3Y" Description="" Scope="Industry">
+						<Formula>EBITDAGr%3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="EBITDAPSGr TTM/3Y" Description="" Scope="Industry">
+						<Formula>EBITDAGr%TTM/EBITDAGr%3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name=" EBITDAGr%5Y" Description="" Scope="Industry">
+						<Formula>EBITDAGr%5Y</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+		</Composite>
+		<Composite Name="Quality" Weight="16" RankType="Higher">
+			<Composite Name="ROE" Weight="12" RankType="Higher">
+				<Composite Name="vs. Universe " Weight="5" RankType="Higher">
+					<StockFactor Weight="1" RankType="Higher" Scope="Universe">
+						<Factor>ROE%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="ROE%3YAvg" Description="" Scope="Universe">
+						<Formula>ROE%3YAvg</Formula>
+					</StockFormula>
+					<StockFactor Weight="1" RankType="Higher" Scope="Universe">
+						<Factor>ROE%5YAvg</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="ROE Ratio TTM/5Y" Description="" Scope="Universe">
+						<Formula>ROE%TTM/ROE%5YAvg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE 3Y Avg" Description="" Scope="Universe">
+						<Formula> $croe3Yavg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE 5Y AVG" Description="" Scope="Universe">
+						<Formula>$croe5Yavg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE TTM" Description="" Scope="Universe">
+						<Formula>100*(FCFTTM/(LoopAvg("ComEq(CTR,QTR)",4)))</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="1" RankType="Higher">
+					<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+						<Factor>ROE%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="ROE%3YAvg" Description="" Scope="Sub-Sector">
+						<Formula>ROE%3YAvg</Formula>
+					</StockFormula>
+					<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+						<Factor>ROE%5YAvg</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="ROE Ratio TTM/5Y" Description="" Scope="Sub-Sector">
+						<Formula>ROE%TTM/ROE%5YAvg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE 3Y Avg" Description="" Scope="Sub-Sector">
+						<Formula>$croe3Yavg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE 5Y AVG" Description="" Scope="Sub-Sector">
+						<Formula>$croe5Yavg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE TTM" Description="" Scope="Sub-Sector">
+						<Formula>100*(FCFTTM/(LoopAvg("ComEq(CTR,QTR)",4)))</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. Industry " Weight="1" RankType="Higher">
+					<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+						<Factor>ROE%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="ROE%3YAvg" Description="" Scope="Industry">
+						<Formula>ROE%3YAvg</Formula>
+					</StockFormula>
+					<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+						<Factor>ROE%5YAvg</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="ROE Ratio TTM/5Y" Description="" Scope="Industry">
+						<Formula>ROE%TTM/ROE%5YAvg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE 3Y Avg" Description="" Scope="Industry">
+						<Formula>$croe3Yavg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE 5Y AVG" Description="" Scope="Industry">
+						<Formula>$croe5Yavg</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CROE TTM" Description="" Scope="Industry">
+						<Formula>100*(FCFTTM/(LoopAvg("ComEq(CTR,QTR)",4)))</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="PROFITABILITY RATIOS" Weight="5" RankType="Higher">
+				<Composite Name="vs. universe" Weight="4" RankType="Higher">
+					<StockFactor Weight="1" RankType="Higher" Scope="Universe">
+						<Factor>ROA%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="EVA" Description="" Scope="Universe">
+						<Formula>ROA%TTM - ((IntExpTTM / DbtTotQ) * (DbtTotQ / AstTotQ)) + (0.15 * (EqTotQ / AstTotQ))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name=" IncPerEmpGr%PQ" Description="" Scope="Universe">
+						<Formula> IncPerEmpGr%PQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="IncPerEmpGr%PYQ" Description="" Scope="Universe">
+						<Formula>IncPerEmpGr%PYQ</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="1" RankType="Higher">
+					<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+						<Factor>ROA%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="EVA" Description="" Scope="Sub-Sector">
+						<Formula>ROA%TTM - ((IntExpTTM / DbtTotQ) * (DbtTotQ / AstTotQ)) + (0.15 * (EqTotQ / AstTotQ))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name=" IncPerEmpGr%PQ" Description="" Scope="Sub-Sector">
+						<Formula>IncPerEmpGr%PQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="IncPerEmpGr%PYQ" Description="" Scope="Sub-Sector">
+						<Formula>IncPerEmpGr%PYQ</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry" Weight="1" RankType="Higher">
+					<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+						<Factor>ROA%TTM</Factor>
+					</StockFactor>
+					<StockFormula Weight="1" RankType="Higher" Name="EVA" Description="" Scope="Industry">
+						<Formula>ROA%TTM - ((IntExpTTM / DbtTotQ) * (DbtTotQ / AstTotQ)) + (0.15 * (EqTotQ / AstTotQ))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name=" IncPerEmpGr%PQ" Description="" Scope="Industry">
+						<Formula>IncPerEmpGr%PQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="IncPerEmpGr%PYQ" Description="" Scope="Industry">
+						<Formula>IncPerEmpGr%PYQ</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="FINANCIAL STRENGTH RATIOS" Weight="5" RankType="Higher">
+				<Composite Name="vs. Univ." Weight="4" RankType="Higher">
+					<StockFactor Weight="20" RankType="Lower" Scope="Universe">
+						<Factor>DbtLT2EqQ</Factor>
+					</StockFactor>
+					<StockFactor Weight="20" RankType="Higher" Scope="Universe">
+						<Factor>QuickRatioQ</Factor>
+					</StockFactor>
+					<StockFactor Weight="20" RankType="Higher" Scope="Universe">
+						<Factor>CurRatioQ</Factor>
+					</StockFactor>
+					<StockFormula Weight="20" RankType="Higher" Name="Cash to Current Liabilities" Description="" Scope="Universe">
+						<Formula>(CurAstQ - RecvblQ - InventoryQ) / CurLiabQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="20" RankType="Higher" Name="Cash to Debt Ratio" Description="" Scope="Universe">
+						<Formula>(CurAstQ - RecvblQ - InventoryQ) / DbtLTQ</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. Subsector" Weight="1" RankType="Higher">
+					<StockFactor Weight="20" RankType="Lower" Scope="Sub-Sector">
+						<Factor>DbtLT2EqQ</Factor>
+					</StockFactor>
+					<StockFactor Weight="20" RankType="Higher" Scope="Sub-Sector">
+						<Factor>QuickRatioQ</Factor>
+					</StockFactor>
+					<StockFactor Weight="20" RankType="Higher" Scope="Sub-Sector">
+						<Factor>CurRatioQ</Factor>
+					</StockFactor>
+					<StockFormula Weight="20" RankType="Higher" Name="Cash to Current Liabilities" Description="" Scope="Sub-Sector">
+						<Formula>(CurAstQ - RecvblQ - InventoryQ) / CurLiabQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="20" RankType="Higher" Name="Cash to Debt Ratio" Description="" Scope="Sub-Sector">
+						<Formula>(CurAstQ - RecvblQ - InventoryQ) / DbtLTQ</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry " Weight="1" RankType="Higher">
+					<StockFactor Weight="20" RankType="Lower" Scope="Industry">
+						<Factor>DbtLT2EqQ</Factor>
+					</StockFactor>
+					<StockFactor Weight="20" RankType="Higher" Scope="Industry">
+						<Factor>QuickRatioQ</Factor>
+					</StockFactor>
+					<StockFactor Weight="20" RankType="Higher" Scope="Industry">
+						<Factor>CurRatioQ</Factor>
+					</StockFactor>
+					<StockFormula Weight="20" RankType="Higher" Name="Cash to Current Liabilities" Description="" Scope="Industry">
+						<Formula>(CurAstQ - RecvblQ - InventoryQ) / CurLiabQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="20" RankType="Higher" Name="Cash to Debt Ratio" Description="" Scope="Industry">
+						<Formula>(CurAstQ - RecvblQ - InventoryQ) / DbtLTQ</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+		</Composite>
+	</Composite>
+	<Composite Name="EPS" Weight="23" RankType="Higher">
+		<Composite Name="vs. Universe " Weight="12" RankType="Higher">
+			<StockFactor Weight="1" RankType="Higher" Scope="Universe">
+				<Factor>EPSExclXorGr%3Y</Factor>
+			</StockFactor>
+			<StockFactor Weight="1" RankType="Higher" Scope="Universe">
+				<Factor>EPSExclXorGr%PYQ</Factor>
+			</StockFactor>
+			<StockFormula Weight="1" RankType="Higher" Name="EPS Chg TTM" Description="" Scope="Universe">
+				<Formula>eval(EPSExclXorTTM>0 and EPSExclXorPTM>0,EPSExclXorGr%TTM,NA)</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="EPSExclXorGr%5Y" Description="" Scope="Universe">
+				<Formula> EPSExclXorGr%5Y</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="OCFtoEPS3Y" Description="" Scope="Universe">
+				<Formula> $OCFtoEPS3Yavg</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="Trend" Description="" Scope="Universe">
+				<Formula> NoIncP4YN2Y</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="EPS Fwd ROR" Description="" Scope="Universe">
+				<Formula>EarnYield + Fhistavg("EPSExclXorGr%TTM", 52, 5)</Formula>
+			</StockFormula>
+		</Composite>
+		<Composite Name="vs. Subsector" Weight="2" RankType="Higher">
+			<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+				<Factor>EPSExclXorGr%3Y</Factor>
+			</StockFactor>
+			<StockFactor Weight="1" RankType="Higher" Scope="Sub-Sector">
+				<Factor>EPSExclXorGr%PYQ</Factor>
+			</StockFactor>
+			<StockFormula Weight="1" RankType="Higher" Name="EPS Chg TTM" Description="" Scope="Sub-Sector">
+				<Formula>eval(EPSExclXorTTM>0 and EPSExclXorPTM>0,EPSExclXorGr%TTM,NA)</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="EPSExclXorGr%5Y" Description="" Scope="Sub-Sector">
+				<Formula>EPSExclXorGr%5Y</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="OCFtoEPS3Y" Description="" Scope="Sub-Sector">
+				<Formula>$OCFtoEPS3Yavg</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="EPS Fwd ROR" Description="" Scope="Sub-Sector">
+				<Formula>EarnYield + Fhistavg("EPSExclXorGr%TTM", 52, 5)</Formula>
+			</StockFormula>
+		</Composite>
+		<Composite Name="vs. Industry " Weight="2" RankType="Higher">
+			<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+				<Factor>EPSExclXorGr%3Y</Factor>
+			</StockFactor>
+			<StockFactor Weight="1" RankType="Higher" Scope="Industry">
+				<Factor>EPSExclXorGr%PYQ</Factor>
+			</StockFactor>
+			<StockFormula Weight="1" RankType="Higher" Name="EPS Chg TTM" Description="" Scope="Industry">
+				<Formula>eval(EPSExclXorTTM>0 and EPSExclXorPTM>0,EPSExclXorGr%TTM,NA)</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="EPSExclXorGr%5Y" Description="" Scope="Industry">
+				<Formula>EPSExclXorGr%5Y</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="OCFtoEPS3Y" Description="" Scope="Industry">
+				<Formula>$OCFtoEPS3Yavg</Formula>
+			</StockFormula>
+			<StockFormula Weight="1" RankType="Higher" Name="EPS Fwd ROR" Description="" Scope="Industry">
+				<Formula>EarnYield + Fhistavg("EPSExclXorGr%TTM", 52, 5)</Formula>
+			</StockFormula>
+		</Composite>
+		<Composite Name="Future Growth" Weight="4" RankType="Higher">
+			<Composite Name="vs. Universe" Weight="7" RankType="Higher">
+				<StockFormula Weight="24" RankType="Higher" Name="CurQ Growth" Description="" Scope="Universe">
+					<Formula> $EstEPSgroCurQ</Formula>
+				</StockFormula>
+				<StockFormula Weight="20" RankType="Higher" Name="1Q Forward Growth" Description="" Scope="Universe">
+					<Formula>$EstEPSgro1Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="14" RankType="Higher" Name="2Q Forward Growth" Description="" Scope="Universe">
+					<Formula> $EstEPSgro2Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="6" RankType="Higher" Name="3Q Forward Growth" Description="" Scope="Universe">
+					<Formula>$EstEPSgro3Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="Est. EPS Growth NY" Description="" Scope="Universe">
+					<Formula> $EstEPSGr_NY</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="Est. EPS Growth NTM" Description="" Scope="Universe">
+					<Formula>%(ConsEstMean(#EPSNTM, 0), EPSActualTTM)</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="LT Growth " Description="" Scope="Universe">
+					<Formula> LTGrthMean</Formula>
+				</StockFormula>
+			</Composite>
+			<Composite Name="vs. subsector" Weight="3" RankType="Higher">
+				<StockFormula Weight="24" RankType="Higher" Name="CurQ Growth" Description="" Scope="Sub-Sector">
+					<Formula>$EstEPSgroCurQ</Formula>
+				</StockFormula>
+				<StockFormula Weight="20" RankType="Higher" Name="1Q Forward Growth" Description="" Scope="Sub-Sector">
+					<Formula>$EstEPSgro1Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="14" RankType="Higher" Name="2Q Forward Growth" Description="" Scope="Sub-Sector">
+					<Formula>$EstEPSgro2Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="6" RankType="Higher" Name="3Q Forward Growth" Description="" Scope="Sub-Sector">
+					<Formula>$EstEPSgro3Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="Est. EPS Growth NY" Description="" Scope="Sub-Sector">
+					<Formula>$EstEPSGr_NY</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="Est. EPS Growth NTM" Description="" Scope="Sub-Sector">
+					<Formula>%(ConsEstMean(#EPSNTM, 0), EPSActualTTM)</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="LT Growth " Description="" Scope="Sub-Sector">
+					<Formula>LTGrthMean</Formula>
+				</StockFormula>
+			</Composite>
+			<Composite Name="vs. Industry" Weight="3" RankType="Higher">
+				<StockFormula Weight="24" RankType="Higher" Name="CurQ Growth" Description="" Scope="Industry">
+					<Formula>$EstEPSgroCurQ</Formula>
+				</StockFormula>
+				<StockFormula Weight="20" RankType="Higher" Name="1Q Forward Growth" Description="" Scope="Industry">
+					<Formula>$EstEPSgro1Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="14" RankType="Higher" Name="2Q Forward Growth" Description="" Scope="Industry">
+					<Formula>$EstEPSgro2Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="6" RankType="Higher" Name="3Q Forward Growth" Description="" Scope="Industry">
+					<Formula>$EstEPSgro3Q</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="Est. EPS Growth NY" Description="" Scope="Industry">
+					<Formula>$EstEPSGr_NY</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="Est. EPS Growth NTM" Description="" Scope="Industry">
+					<Formula>%(ConsEstMean(#EPSNTM, 0), EPSActualTTM)</Formula>
+				</StockFormula>
+				<StockFormula Weight="12" RankType="Higher" Name="LT Growth " Description="" Scope="Industry">
+					<Formula> LTGrthMean</Formula>
+				</StockFormula>
+			</Composite>
+		</Composite>
+		<Composite Name="Acceleration " Weight="2" RankType="Higher">
+			<Composite Name="vs. universe" Weight="7" RankType="Higher">
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel - last Qtr" Description="" Scope="Universe">
+					<Formula>((EPSExclXor(0,qtr)/ EPSExclXor(4,qtr))-( EPSExclXor(1,qtr)/ EPSExclXor(5,qtr)))/abs((EPSExclXor(1,qtr)/ EPSExclXor(5,qtr)))</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel TTM to last Qtr" Description="" Scope="Universe">
+					<Formula>(EPSExclXorGr%PYQ- EPSExclXorGr%TTM)/abs( EPSExclXorGr%TTM)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel 3 yr to last qtr" Description="" Scope="Universe">
+					<Formula>(EPSExclXorGr%PYQ-EPSExclXorGr%3Y)/abs(EPSExclXorGr%3Y)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel 3Y to TTM" Description="" Scope="Universe">
+					<Formula>(EPSExclXorGr%TTM- EPSExclXorGr%3Y)/abs(EPSExclXorGr%3Y)</Formula>
+				</StockFormula>
+			</Composite>
+			<Composite Name="vs. subsector" Weight="3" RankType="Higher">
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel - last Qtr" Description="" Scope="Sub-Sector">
+					<Formula>((EPSExclXor(0,qtr)/ EPSExclXor(4,qtr))-( EPSExclXor(1,qtr)/ EPSExclXor(5,qtr)))/abs((EPSExclXor(1,qtr)/ EPSExclXor(5,qtr)))</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel TTM to last Qtr" Description="" Scope="Sub-Sector">
+					<Formula>(EPSExclXorGr%PYQ- EPSExclXorGr%TTM)/abs( EPSExclXorGr%TTM)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel 3 yr to last qtr" Description="" Scope="Sub-Sector">
+					<Formula>(EPSExclXorGr%PYQ-EPSExclXorGr%3Y)/abs(EPSExclXorGr%3Y)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel 3Y to TTM" Description="" Scope="Sub-Sector">
+					<Formula>(EPSExclXorGr%TTM- EPSExclXorGr%3Y)/abs(EPSExclXorGr%3Y)</Formula>
+				</StockFormula>
+			</Composite>
+			<Composite Name="vs. industry" Weight="3" RankType="Higher">
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel - last Qtr" Description="" Scope="Industry">
+					<Formula>((EPSExclXor(0,qtr)/ EPSExclXor(4,qtr))-( EPSExclXor(1,qtr)/ EPSExclXor(5,qtr)))/abs((EPSExclXor(1,qtr)/ EPSExclXor(5,qtr)))</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel TTM to last Qtr" Description="" Scope="Industry">
+					<Formula>(EPSExclXorGr%PYQ- EPSExclXorGr%TTM)/abs( EPSExclXorGr%TTM)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel 3 yr to last qtr" Description="" Scope="Industry">
+					<Formula>(EPSExclXorGr%PYQ-EPSExclXorGr%3Y)/abs(EPSExclXorGr%3Y)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="EPS Accel 3Y to TTM" Description="" Scope="Industry">
+					<Formula>(EPSExclXorGr%TTM- EPSExclXorGr%3Y)/abs(EPSExclXorGr%3Y)</Formula>
+				</StockFormula>
+			</Composite>
+		</Composite>
+	</Composite>
+	<Composite Name="SentiMoVal" Weight="28" RankType="Higher">
+		<Composite Name="SENTIMENT" Weight="10" RankType="Higher">
+			<Composite Name="EPS Revision" Weight="45" RankType="Higher">
+				<Composite Name="vs. universe" Weight="4" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="CY EPS Est. 4WK Revision [NYSwitch]" Description="" Scope="Universe">
+						<Formula>%($CYAENOW, ConsEstMean(#EPSY, $NYSwitch, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CQ EPS Est. 4WK Revision" Description="" Scope="Universe">
+						<Formula>%(CurQEPSMean, CurQEPS4WkAgo)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Lower" Name="EPS Estimate Variability CQ" Description="" Scope="Universe">
+						<Formula>CurQEPSStdDev/abs( CurQEPSMean)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NQ EPS Est. 8WK Revision" Description="" Scope="Universe">
+						<Formula>%(NextQEPSMean, NextQEPS8WkAgo)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NY EPS Est. 8WK Revision [NYSwitch]" Description="" Scope="Universe">
+						<Formula>%($NYAENOW, ConsEstMean(#EPSY, 1 + $NYSwitch, 8))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="IND.AGG. CY U/D EPS Rev." Description="" Scope="Universe">
+						<Formula>Aggregate ("(ConsEstUp(#EPSY,0) - ConsEstDn(#EPSY,0))/ConsEstCnt(#EPSY, 0)", #Industry, #CapAvg, 5, #Winsor)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="IND.AGG. NY U/D EPS Rev." Description="" Scope="Universe">
+						<Formula>Aggregate ("(ConsEstUp(#EPSY, 1) - ConsEstDn(#EPSY, 1))/ConsEstCnt(#EPSY, 1)", #Industry, #CapAvg, 5, #Winsor)</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="1" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="CY EPS Est. 4WK Revision [NYSwitch]" Description="" Scope="Sub-Sector">
+						<Formula>%($CYAENOW, ConsEstMean(#EPSY, $NYSwitch, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CQ EPS Est. 4WK Revision" Description="" Scope="Sub-Sector">
+						<Formula>%(CurQEPSMean, CurQEPS4WkAgo)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Lower" Name="EPS Estimate Variability CQ" Description="" Scope="Sub-Sector">
+						<Formula>CurQEPSStdDev/abs( CurQEPSMean)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NQ EPS Est. 8WK Revision" Description="" Scope="Sub-Sector">
+						<Formula>%(NextQEPSMean, NextQEPS8WkAgo)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NY EPS Est. 8WK Revision [NYSwitch]" Description="" Scope="Sub-Sector">
+						<Formula>%($NYAENOW, ConsEstMean(#EPSY, 1 + $NYSwitch, 8))</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry" Weight="1" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="CY EPS Est. 4WK Revision [NYSwitch]" Description="" Scope="Industry">
+						<Formula>%($CYAENOW, ConsEstMean(#EPSY, $NYSwitch, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CQ EPS Est. 4WK Revision" Description="" Scope="Industry">
+						<Formula>%(CurQEPSMean, CurQEPS4WkAgo)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Lower" Name="EPS Estimate Variability CQ" Description="" Scope="Industry">
+						<Formula>CurQEPSStdDev/abs( CurQEPSMean)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NQ EPS Est. 8WK Revision" Description="" Scope="Industry">
+						<Formula>%(NextQEPSMean, NextQEPS8WkAgo)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NY EPS Est. 8WK Revision [NYSwitch]" Description="" Scope="Industry">
+						<Formula>%($NYAENOW, ConsEstMean(#EPSY, 1 + $NYSwitch, 8))</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="Sales Revision" Weight="32" RankType="Higher">
+				<Composite Name="vs. universe" Weight="4" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="CY Sales Est. 4WK Revision [NY Switch]" Description="" Scope="Universe">
+						<Formula>%(ConsEstMean(#SALEY, $NYSwitch, 0), ConsEstMean(#SALEY, $NYSwitch, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CQ Sales Est. 4WK Revision" Description="" Scope="Universe">
+						<Formula>%(ConsEstMean(#SALEQ, 0, 0), ConsEstMean(#SALEQ, 0, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Lower" Name="Sales Estimate Variability CQ" Description="" Scope="Universe">
+						<Formula>ConsEstStdDev(#SALEQ, 0)/abs(ConsEstMean(#SALEQ, 0))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NQ Sales Est. 8WK Revision" Description="" Scope="Universe">
+						<Formula>%(ConsEstMean(#SALEQ, 1, 0), ConsEstMean(#SALEQ, 1, 8))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NY Sales Est. 8WK Revision [NY Switch]" Description="" Scope="Universe">
+						<Formula>%($NYSalesEstNOW, ConsEstMean(#SALEY, 1 + $NYSwitch, 8)) </Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="IND.AGG. CY U/D Sales Rev." Description="" Scope="Universe">
+						<Formula>Aggregate ("(ConsEstUp(#SALEY,0) - ConsEstDn(#SALEY,0))/ConsEstCnt(#SALEY, 0)", #Industry, #CapAvg, 5, #Winsor)</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="IND.AGG. NY U/D Sales Rev." Description="" Scope="Universe">
+						<Formula>Aggregate ("(ConsEstUp(#SALEY, 1) - ConsEstDn(#SALEY, 1))/ConsEstCnt(#SALEY,  1)", #Industry, #CapAvg, 5, #Winsor)</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="1" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="CY Sales Est. 4WK Revision [NY Switch]" Description="" Scope="Sub-Sector">
+						<Formula>%(ConsEstMean(#SALEY, $NYSwitch, 0), ConsEstMean(#SALEY, $NYSwitch, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CQ Sales Est. 4WK Revision" Description="" Scope="Sub-Sector">
+						<Formula>%(ConsEstMean(#SALEQ, 0, 0), ConsEstMean(#SALEQ, 0, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Lower" Name="Sales Estimate Variability CQ" Description="" Scope="Sub-Sector">
+						<Formula>ConsEstStdDev(#SALEQ, 0)/abs(ConsEstMean(#SALEQ, 0))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NQ Sales Est. 8WK Revision" Description="" Scope="Sub-Sector">
+						<Formula>%(ConsEstMean(#SALEQ, 1, 0), ConsEstMean(#SALEQ, 1, 8))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NY Sales Est. 8WK Revision [NY Switch]" Description="" Scope="Sub-Sector">
+						<Formula>%($NYSalesEstNOW, ConsEstMean(#SALEY, 1 + $NYSwitch, 8))</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry" Weight="1" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="CY Sales Est. 4WK Revision [NY Switch]" Description="" Scope="Industry">
+						<Formula>%(ConsEstMean(#SALEY, $NYSwitch, 0), ConsEstMean(#SALEY, $NYSwitch, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="CQ Sales Est. 4WK Revision" Description="" Scope="Industry">
+						<Formula>%(ConsEstMean(#SALEQ, 0, 0), ConsEstMean(#SALEQ, 0, 4))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Lower" Name="Sales Estimate Variability CQ" Description="" Scope="Industry">
+						<Formula>ConsEstStdDev(#SALEQ, 0)/abs(ConsEstMean(#SALEQ, 0))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NQ Sales Est. 8WK Revision" Description="" Scope="Industry">
+						<Formula>%(ConsEstMean(#SALEQ, 1, 0), ConsEstMean(#SALEQ, 1, 8))</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="NY Sales Est. 8WK Revision [NY Switch]" Description="" Scope="Industry">
+						<Formula>%($NYSalesEstNOW, ConsEstMean(#SALEY, 1 + $NYSwitch, 8))</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="Recommendations" Weight="13" RankType="Higher">
+				<Composite Name="vs. universe " Weight="4" RankType="Higher">
+					<StockFormula Weight="75" RankType="Lower" Name="Changes in Recommendation" Description="" Scope="Universe">
+						<Formula>AvgRec/AvgRec4WkAgo</Formula>
+					</StockFormula>
+					<StockFactor Weight="25" RankType="Lower" Scope="Universe">
+						<Factor>AvgRec</Factor>
+					</StockFactor>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="1" RankType="Higher">
+					<StockFormula Weight="75" RankType="Lower" Name="Changes in Recommendation" Description="" Scope="Sub-Sector">
+						<Formula>AvgRec/AvgRec4WkAgo</Formula>
+					</StockFormula>
+					<StockFactor Weight="25" RankType="Lower" Scope="Sub-Sector">
+						<Factor>AvgRec</Factor>
+					</StockFactor>
+				</Composite>
+				<Composite Name="vs. industry " Weight="1" RankType="Higher">
+					<StockFormula Weight="75" RankType="Lower" Name="Changes in Recommendation" Description="" Scope="Industry">
+						<Formula>AvgRec/AvgRec4WkAgo</Formula>
+					</StockFormula>
+					<StockFactor Weight="25" RankType="Lower" Scope="Industry">
+						<Factor>AvgRec</Factor>
+					</StockFactor>
+				</Composite>
+			</Composite>
+			<Composite Name="Surprise" Weight="10" RankType="Higher">
+				<Composite Name="vs. universe" Weight="4" RankType="Higher">
+					<StockFormula Weight="2" RankType="Higher" Name="SUEQ1" Description="" Scope="Universe">
+						<Formula>SUEQ1</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="SUEQ2" Description="" Scope="Universe">
+						<Formula>SUEQ2</Formula>
+					</StockFormula>
+					<StockFormula Weight="2" RankType="Higher" Name="SUSQ1" Description="" Scope="Universe">
+						<Formula>SUSQ1</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="SUSQ2" Description="" Scope="Universe">
+						<Formula>SUSQ2</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="1" RankType="Higher">
+					<StockFormula Weight="2" RankType="Higher" Name="SUEQ1" Description="" Scope="Sub-Sector">
+						<Formula>SUEQ1</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="SUEQ2" Description="" Scope="Sub-Sector">
+						<Formula>SUEQ2</Formula>
+					</StockFormula>
+					<StockFormula Weight="2" RankType="Higher" Name="SUSQ1" Description="" Scope="Sub-Sector">
+						<Formula>SUSQ1</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="SUSQ2" Description="" Scope="Sub-Sector">
+						<Formula>SUSQ2</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry" Weight="1" RankType="Higher">
+					<StockFormula Weight="2" RankType="Higher" Name="SUEQ1" Description="" Scope="Industry">
+						<Formula>SUEQ1</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="SUEQ2" Description="" Scope="Industry">
+						<Formula>SUEQ2</Formula>
+					</StockFormula>
+					<StockFormula Weight="2" RankType="Higher" Name="SUSQ1" Description="" Scope="Industry">
+						<Formula>SUSQ1</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="SUSQ2" Description="" Scope="Industry">
+						<Formula>SUSQ2</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+		</Composite>
+		<Composite Name="Relative Price Strength" Weight="9" RankType="Higher">
+			<Composite Name="Performance Consistency" Weight="10" RankType="Higher">
+				<Composite Name="vs. universe " Weight="4" RankType="Higher">
+					<StockFormula Weight="32.5" RankType="Higher" Name="3MoPctRet" Description="" Scope="Universe">
+						<Formula>Close(0)/Close(60)</Formula>
+					</StockFormula>
+					<StockFormula Weight="27.5" RankType="Higher" Name="3MoRet3MoAgo" Description="" Scope="Universe">
+						<Formula>Close(60)/Close(120)</Formula>
+					</StockFormula>
+					<StockFormula Weight="22.5" RankType="Higher" Name="3MoRet6MoAgo" Description="" Scope="Universe">
+						<Formula>Close(120)/Close(180)</Formula>
+					</StockFormula>
+					<StockFormula Weight="17.5" RankType="Higher" Name="3MoRet9MoAgo" Description="" Scope="Universe">
+						<Formula>Close(180)/Close(240)</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="1" RankType="Higher">
+					<StockFormula Weight="32.5" RankType="Higher" Name="3MoPctRet" Description="" Scope="Sub-Sector">
+						<Formula>Close(0)/Close(60)</Formula>
+					</StockFormula>
+					<StockFormula Weight="27.5" RankType="Higher" Name="3MoRet3MoAgo" Description="" Scope="Sub-Sector">
+						<Formula>Close(60)/Close(120)</Formula>
+					</StockFormula>
+					<StockFormula Weight="22.5" RankType="Higher" Name="3MoRet6MoAgo" Description="" Scope="Sub-Sector">
+						<Formula>Close(120)/Close(180)</Formula>
+					</StockFormula>
+					<StockFormula Weight="17.5" RankType="Higher" Name="3MoRet9MoAgo" Description="" Scope="Sub-Sector">
+						<Formula>Close(180)/Close(240)</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry " Weight="1" RankType="Higher">
+					<StockFormula Weight="32.5" RankType="Higher" Name="3MoPctRet" Description="" Scope="Industry">
+						<Formula>Close(0)/Close(60)</Formula>
+					</StockFormula>
+					<StockFormula Weight="27.5" RankType="Higher" Name="3MoRet3MoAgo" Description="" Scope="Industry">
+						<Formula>Close(60)/Close(120)</Formula>
+					</StockFormula>
+					<StockFormula Weight="22.5" RankType="Higher" Name="3MoRet6MoAgo" Description="" Scope="Industry">
+						<Formula>Close(120)/Close(180)</Formula>
+					</StockFormula>
+					<StockFormula Weight="17.5" RankType="Higher" Name="3MoRet9MoAgo" Description="" Scope="Industry">
+						<Formula>Close(180)/Close(240)</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="Donchian Channel " Weight="6" RankType="Higher">
+				<Composite Name="vs. universe " Weight="4" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 20" Description="" Scope="Universe">
+						<Formula> $Donch20</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 65" Description="" Scope="Universe">
+						<Formula>$Donch65</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 125" Description="" Scope="Universe">
+						<Formula>$Donch125</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 252" Description="" Scope="Universe">
+						<Formula>$Donch252</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="1" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 20" Description="" Scope="Sub-Sector">
+						<Formula>$Donch20</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 65" Description="" Scope="Sub-Sector">
+						<Formula>$Donch65</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 125" Description="" Scope="Sub-Sector">
+						<Formula>$Donch125</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 252" Description="" Scope="Sub-Sector">
+						<Formula>$Donch252</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry " Weight="1" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 20" Description="" Scope="Industry">
+						<Formula>$Donch20</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 65" Description="" Scope="Industry">
+						<Formula>$Donch65</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 125" Description="" Scope="Industry">
+						<Formula>$Donch125</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="Donch 252" Description="" Scope="Industry">
+						<Formula>$Donch252</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="MOMO" Weight="4" RankType="Higher">
+				<StockFormula Weight="10" RankType="Higher" Name="$ma125roc5" Description="" Scope="Universe">
+					<Formula>$ma125roc5</Formula>
+				</StockFormula>
+				<StockFormula Weight="5" RankType="Higher" Name="$ma50roc10" Description="" Scope="Universe">
+					<Formula>$ma50roc10</Formula>
+				</StockFormula>
+				<StockFormula Weight="85" RankType="Higher" Name="$ma200roc5" Description="" Scope="Universe">
+					<Formula>$ma200roc5</Formula>
+				</StockFormula>
+			</Composite>
+			<Composite Name="VoMo" Weight="10" RankType="Higher">
+				<Composite Name="vs. universe" Weight="66.67" RankType="Higher">
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_021" Description="" Scope="Universe">
+						<Formula>$nVoMo_021</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_63" Description="" Scope="Universe">
+						<Formula>$nVoMo_63</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_125" Description="" Scope="Universe">
+						<Formula>$nVoMo_125</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_252" Description="" Scope="Universe">
+						<Formula>$nVoMo_252</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="16.67" RankType="Higher">
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_021" Description="" Scope="Sub-Sector">
+						<Formula>$nVoMo_021</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_63" Description="" Scope="Sub-Sector">
+						<Formula>$nVoMo_63</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_125" Description="" Scope="Sub-Sector">
+						<Formula>$nVoMo_125</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_252" Description="" Scope="Sub-Sector">
+						<Formula>$nVoMo_252</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry" Weight="16.67" RankType="Higher">
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_021" Description="" Scope="Industry">
+						<Formula>$nVoMo_021</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_63" Description="" Scope="Industry">
+						<Formula>$nVoMo_63</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_125" Description="" Scope="Industry">
+						<Formula>$nVoMo_125</Formula>
+					</StockFormula>
+					<StockFormula Weight="10" RankType="Higher" Name="$nVoMo_252" Description="" Scope="Industry">
+						<Formula>$nVoMo_252</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+		</Composite>
+		<Composite Name="Industry Technicals" Weight="5" RankType="Higher">
+			<Composite Name="Ind Rel Strength" Weight="2.5" RankType="Higher">
+				<IndFactor Weight="32.5" RankType="Higher">
+					<Factor>Pr4W%ChgInd</Factor>
+				</IndFactor>
+				<IndFactor Weight="27.5" RankType="Higher">
+					<Factor>Pr13W%ChgInd</Factor>
+				</IndFactor>
+				<IndFactor Weight="22.5" RankType="Higher">
+					<Factor>Pr26W%ChgInd</Factor>
+				</IndFactor>
+				<IndFactor Weight="17.5" RankType="Higher">
+					<Factor>Pr52W%ChgInd</Factor>
+				</IndFactor>
+			</Composite>
+			<Composite Name="Donchian Channel : Industry" Weight="1.25" RankType="Higher">
+				<IndFormula Weight="0" RankType="Higher" Name="Industry Donch 20" Description="">
+					<Formula>((Close(0) - LowVal(20))/(HighVal(20)-LowVal(20))*100)</Formula>
+				</IndFormula>
+				<IndFormula Weight="0" RankType="Higher" Name="Industry Donch 65" Description="">
+					<Formula>((Close(0) - LowVal(65))/(HighVal(65)-LowVal(65))*100)</Formula>
+				</IndFormula>
+				<IndFormula Weight="0" RankType="Higher" Name="Industry Donch 125" Description="">
+					<Formula>((Close(0) - LowVal(125))/(HighVal(125)-LowVal(125))*100)</Formula>
+				</IndFormula>
+			</Composite>
+		</Composite>
+		<Composite Name="Accumulation/Distribution" Weight="2" RankType="Higher">
+			<Composite Name="Institutions/InsBuys/SI" Weight="4" RankType="Higher">
+				<Composite Name="vs. universe" Weight="12" RankType="Higher">
+					<StockFactor Weight="4.54" RankType="Lower" Scope="Universe">
+						<Factor>SI1Mo%Chg</Factor>
+					</StockFactor>
+					<StockFactor Weight="4.54" RankType="Higher" Scope="Universe">
+						<Factor>InsBuyTrans</Factor>
+					</StockFactor>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Net Purchases-2Q" Description="" Scope="Universe">
+						<Formula>InstNetPurch + InstNetPurchPQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Net New Institutional Positions" Description="" Scope="Universe">
+						<Formula> $2QinstNetpos</Formula>
+					</StockFormula>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Inst Own Ratio MRQ/PQ" Description="" Scope="Universe">
+						<Formula>Inst%Own/Inst%OwnPQ</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="3" RankType="Higher">
+					<StockFactor Weight="4.54" RankType="Lower" Scope="Sub-Sector">
+						<Factor>SI1Mo%Chg</Factor>
+					</StockFactor>
+					<StockFactor Weight="4.54" RankType="Higher" Scope="Sub-Sector">
+						<Factor>InsBuyTrans</Factor>
+					</StockFactor>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Net Purchases-2Q" Description="" Scope="Sub-Sector">
+						<Formula>InstNetPurch + InstNetPurchPQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Net New Institutional Positions" Description="" Scope="Sub-Sector">
+						<Formula>$2QinstNetpos</Formula>
+					</StockFormula>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Inst Own Ratio MRQ/PQ" Description="" Scope="Sub-Sector">
+						<Formula>Inst%Own/Inst%OwnPQ</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry" Weight="3" RankType="Higher">
+					<StockFactor Weight="4.54" RankType="Lower" Scope="Industry">
+						<Factor>SI1Mo%Chg</Factor>
+					</StockFactor>
+					<StockFactor Weight="4.54" RankType="Higher" Scope="Industry">
+						<Factor>InsBuyTrans</Factor>
+					</StockFactor>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Net Purchases-2Q" Description="" Scope="Industry">
+						<Formula>InstNetPurch + InstNetPurchPQ</Formula>
+					</StockFormula>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Net New Institutional Positions" Description="" Scope="Industry">
+						<Formula>$2QinstNetpos</Formula>
+					</StockFormula>
+					<StockFormula Weight="6.06" RankType="Higher" Name="Inst Own Ratio MRQ/PQ" Description="" Scope="Industry">
+						<Formula>Inst%Own/Inst%OwnPQ</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="Volume" Weight="6" RankType="Higher">
+				<Composite Name="vs. universe" Weight="12" RankType="Higher">
+					<StockFormula Weight="0" RankType="Higher" Name="Vol Ratio 1Mo/3Mo" Description="" Scope="Universe">
+						<Formula>AvgVol(20)/AvgVol(60)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 50D" Description="" Scope="Universe">
+						<Formula>UpDownRatio(50, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 150D" Description="" Scope="Universe">
+						<Formula>UpDownRatio(150, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 50/150D" Description="" Scope="Universe">
+						<Formula>UpDownRatio(50, 0)/UpDownRatio(150, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 65" Description="" Scope="Universe">
+						<Formula>ChaikinMFP(21, 65)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 150" Description="" Scope="Universe">
+						<Formula>ChaikinMFP(21, 150)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 65/150" Description="" Scope="Universe">
+						<Formula>ChaikinMFP(21, 65)/ChaikinMFP(21, 150)</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. subsector" Weight="3" RankType="Higher">
+					<StockFormula Weight="0" RankType="Higher" Name="Vol Ratio 1Mo/3Mo" Description="" Scope="Sub-Sector">
+						<Formula>AvgVol(20)/AvgVol(60)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 50D" Description="" Scope="Sub-Sector">
+						<Formula>UpDownRatio(50, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 150D" Description="" Scope="Sub-Sector">
+						<Formula>UpDownRatio(150, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 50/150D" Description="" Scope="Sub-Sector">
+						<Formula>UpDownRatio(50, 0)/UpDownRatio(150, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 65" Description="" Scope="Sub-Sector">
+						<Formula>ChaikinMFP(21, 65)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 150" Description="" Scope="Sub-Sector">
+						<Formula>ChaikinMFP(21, 150)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 65/150" Description="" Scope="Sub-Sector">
+						<Formula>ChaikinMFP(21, 65)/ChaikinMFP(21, 150)</Formula>
+					</StockFormula>
+				</Composite>
+				<Composite Name="vs. industry" Weight="3" RankType="Higher">
+					<StockFormula Weight="0" RankType="Higher" Name="Vol Ratio 1Mo/3Mo" Description="" Scope="Industry">
+						<Formula>AvgVol(20)/AvgVol(60)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 50D" Description="" Scope="Industry">
+						<Formula>UpDownRatio(50, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 150D" Description="" Scope="Industry">
+						<Formula>UpDownRatio(150, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="U/D Vol 50/150D" Description="" Scope="Industry">
+						<Formula>UpDownRatio(50, 0)/UpDownRatio(150, 0)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 65" Description="" Scope="Industry">
+						<Formula>ChaikinMFP(21, 65)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 150" Description="" Scope="Industry">
+						<Formula>ChaikinMFP(21, 150)</Formula>
+					</StockFormula>
+					<StockFormula Weight="0" RankType="Higher" Name="Chaikin MF 65/150" Description="" Scope="Industry">
+						<Formula>ChaikinMFP(21, 65)/ChaikinMFP(21, 150)</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+		</Composite>
+		<Composite Name="VALUATION RATIOS" Weight="5" RankType="Higher">
+			<Composite Name="vs. universe" Weight="12" RankType="Higher">
+				<StockFactor Weight="1" RankType="Lower" Scope="Universe">
+					<Factor>PEG</Factor>
+				</StockFactor>
+				<StockFormula Weight="1" RankType="Lower" Name="Price vs Buy Range" Description="" Scope="Universe">
+					<Formula>Price / ( ( ( EPSExclXorTTM * (1+LTGrthLow/100)^5)*((PEHigh+PELow)/2) )/3)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="Gain Loss Ratio" Description="" Scope="Universe">
+					<Formula>( ( EPSExclXorTTM * (1+LTGrthHigh/100)^5 * PEHigh) - Price) / Price </Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="%Undervalued vs. 3Y Med PE (Pos = undervalued)" Description="" Scope="Universe">
+					<Formula>$RelVal_3YMedPE</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="%Undervalued vs. 3Y Median Fwd P/FCF" Description="" Scope="Universe">
+					<Formula>$RelVal_3YMedP2FCF</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Lower" Name="$FCFPEG" Description="" Scope="Universe">
+					<Formula> $FCFPEG</Formula>
+				</StockFormula>
+				<Composite Name="CompValu" Weight="10" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd" Description="" Scope="Universe">
+						<Formula>$SgrOpMxPEblnd</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_Rank3Y" Description="" Scope="Universe">
+						<Formula>$SgrOpMxPEblnd_Rank3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_Rel3Y" Description="" Scope="Universe">
+						<Formula>$SgrOpMxPEblnd_Rel3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_ZS3Y" Description="" Scope="Universe">
+						<Formula>$SgrOpMxPEblnd_ZS3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd" Description="" Scope="Universe">
+						<Formula>$EgrOCFMxFCFblnd</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_Rank3Y" Description="" Scope="Universe">
+						<Formula>$EgrOCFMxFCFblnd_Rank3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_Rel3Y" Description="" Scope="Universe">
+						<Formula>$EgrOCFMxFCFblnd_Rel3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_ZS3Y" Description="" Scope="Universe">
+						<Formula>$EgrOCFMxFCFblnd_ZS3Y</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="vs. subsector" Weight="3" RankType="Higher">
+				<StockFactor Weight="1" RankType="Lower" Scope="Sub-Sector">
+					<Factor>PEG</Factor>
+				</StockFactor>
+				<StockFormula Weight="1" RankType="Lower" Name="Price vs Buy Range" Description="" Scope="Sub-Sector">
+					<Formula>Price / ( ( ( EPSExclXorTTM * (1+LTGrthLow/100)^5)*((PEHigh+PELow)/2) )/3)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="Gain Loss Ratio" Description="" Scope="Sub-Sector">
+					<Formula>( ( EPSExclXorTTM * (1+LTGrthHigh/100)^5 * PEHigh) - Price) / Price</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="%Undervalued vs. 3Y Med PE (Pos = undervalued)" Description="" Scope="Sub-Sector">
+					<Formula>$RelVal_3YMedPE</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="%Undervalued vs. 3Y Median Fwd P/FCF" Description="" Scope="Sub-Sector">
+					<Formula>$RelVal_3YMedP2FCF</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Lower" Name="$FCFPEG" Description="" Scope="Sub-Sector">
+					<Formula>$FCFPEG</Formula>
+				</StockFormula>
+				<Composite Name="CompValu" Weight="10" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd" Description="" Scope="Sub-Sector">
+						<Formula>$SgrOpMxPEblnd</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_Rank3Y" Description="" Scope="Sub-Sector">
+						<Formula>$SgrOpMxPEblnd_Rank3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_Rel3Y" Description="" Scope="Sub-Sector">
+						<Formula>$SgrOpMxPEblnd_Rel3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_ZS3Y" Description="" Scope="Sub-Sector">
+						<Formula>$SgrOpMxPEblnd_ZS3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd" Description="" Scope="Sub-Sector">
+						<Formula>$EgrOCFMxFCFblnd</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_Rank3Y" Description="" Scope="Sub-Sector">
+						<Formula>$EgrOCFMxFCFblnd_Rank3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_Rel3Y" Description="" Scope="Sub-Sector">
+						<Formula>$EgrOCFMxFCFblnd_Rel3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_ZS3Y" Description="" Scope="Sub-Sector">
+						<Formula>$EgrOCFMxFCFblnd_ZS3Y</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+			<Composite Name="vs. industry" Weight="3" RankType="Higher">
+				<StockFactor Weight="1" RankType="Lower" Scope="Industry">
+					<Factor>PEG</Factor>
+				</StockFactor>
+				<StockFormula Weight="1" RankType="Lower" Name="Price vs Buy Range" Description="" Scope="Industry">
+					<Formula>Price / ( ( ( EPSExclXorTTM * (1+LTGrthLow/100)^5)*((PEHigh+PELow)/2) )/3)</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="Gain Loss Ratio" Description="" Scope="Industry">
+					<Formula>( ( EPSExclXorTTM * (1+LTGrthHigh/100)^5 * PEHigh) - Price) / Price</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="%Undervalued vs. 3Y Med PE (Pos = undervalued)" Description="" Scope="Industry">
+					<Formula>$RelVal_3YMedPE</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Higher" Name="%Undervalued vs. 3Y Median Fwd P/FCF" Description="" Scope="Industry">
+					<Formula>$RelVal_3YMedP2FCF</Formula>
+				</StockFormula>
+				<StockFormula Weight="1" RankType="Lower" Name="$FCFPEG" Description="" Scope="Industry">
+					<Formula>$FCFPEG</Formula>
+				</StockFormula>
+				<Composite Name="CompValu" Weight="10" RankType="Higher">
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd" Description="" Scope="Industry">
+						<Formula>$SgrOpMxPEblnd</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_Rank3Y" Description="" Scope="Industry">
+						<Formula>$SgrOpMxPEblnd_Rank3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_Rel3Y" Description="" Scope="Industry">
+						<Formula>$SgrOpMxPEblnd_Rel3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$SgrOpMxPEblnd_ZS3Y" Description="" Scope="Industry">
+						<Formula>$SgrOpMxPEblnd_ZS3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd" Description="" Scope="Industry">
+						<Formula>$EgrOCFMxFCFblnd</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_Rank3Y" Description="" Scope="Industry">
+						<Formula>$EgrOCFMxFCFblnd_Rank3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_Rel3Y" Description="" Scope="Industry">
+						<Formula>$EgrOCFMxFCFblnd_Rel3Y</Formula>
+					</StockFormula>
+					<StockFormula Weight="1" RankType="Higher" Name="$EgrOCFMxFCFblnd_ZS3Y" Description="" Scope="Industry">
+						<Formula>$EgrOCFMxFCFblnd_ZS3Y</Formula>
+					</StockFormula>
+				</Composite>
+			</Composite>
+		</Composite>
+	</Composite>
+</RankingSystem>
